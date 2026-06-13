@@ -5,13 +5,58 @@ export type Project = {
   description: string;
   domain: "Quant" | "ML / Data" | "Software";
   tags: string[];
-  repo: string;
+  repo?: string;
   demo?: string;
   featured?: boolean;
+  spotlight?: boolean;
+  audience?: string;
+  highlights?: string[];
   metric?: { label: string; value: string };
 };
 
 export const projects: Project[] = [
+  {
+    slug: "riftcompare",
+    title: "RiftCompare",
+    blurb:
+      "Live price-comparison engine for Riftbound, the League of Legends TCG — used by thousands of players.",
+    description:
+      "A live price-comparison platform for Riftbound (the League of Legends trading card game). It aggregates and normalises prices for every card across dozens of retailers plus eBay (AU / NZ / US), refreshes daily, and routes players straight to the cheapest place to buy singles and sealed product.",
+    domain: "Software",
+    audience: "Riftbound · League of Legends TCG",
+    tags: ["TypeScript", "Next.js", "Web Scraping", "Data Pipeline", "Vercel"],
+    demo: "https://riftcompare.com",
+    spotlight: true,
+    featured: true,
+    metric: { label: "Community visits", value: "10k+" },
+    highlights: [
+      "Daily multi-retailer scraping and price normalisation across dozens of stores and eBay",
+      "Full card database with search across singles and sealed products (boxes, packs, Proving Grounds, Nexus Night)",
+      "Direct buy-through links that send players to the cheapest retailer",
+      "10,000+ organic visits from the Riftbound community",
+    ],
+  },
+  {
+    slug: "dexcompare",
+    title: "DexCompare",
+    blurb:
+      "Pokémon TCG price-comparison platform with a live card-value checker across 29+ stores.",
+    description:
+      "A price-comparison platform for the Pokémon Trading Card Game. It tracks live prices for a comprehensive card database across 29+ US retailers and eBay, with a free value checker that surfaces real market value and the cheapest place to buy by card name and collector number.",
+    domain: "Software",
+    audience: "Pokémon TCG",
+    tags: ["TypeScript", "Next.js", "Web Scraping", "Data Pipeline", "Vercel"],
+    demo: "https://dexcompare.app",
+    spotlight: true,
+    featured: true,
+    metric: { label: "Community visits", value: "2k+" },
+    highlights: [
+      "Live prices aggregated across 29+ US retailers and eBay US",
+      "Free card-value checker by card name and collector number",
+      "Compare singles, booster boxes, ETBs and bundles in one place",
+      "2,000+ visits from Pokémon collectors and players",
+    ],
+  },
   {
     slug: "skinport-trading-bot",
     title: "Skinport Trading Bot",
@@ -48,7 +93,6 @@ export const projects: Project[] = [
     domain: "ML / Data",
     tags: ["Python", "scikit-learn", "Machine Learning", "Healthcare", "Feature Engineering"],
     repo: "https://github.com/Specifxx/COMP9417-Major-Project---Parkinson-s-Disease-Prediction",
-    featured: true,
   },
   {
     slug: "chrome-dino-rl",
@@ -60,31 +104,18 @@ export const projects: Project[] = [
     domain: "ML / Data",
     tags: ["Python", "Reinforcement Learning", "Computer Vision", "OpenCV"],
     repo: "https://github.com/Specifxx/Mastering-the-Chrome-Dino-Game-using-RL-and-CV",
-    featured: true,
   },
   {
     slug: "compare-empire",
     title: "CompareEmpire",
     blurb:
-      "Price-comparison platform aggregating deals across categories and subsidiaries.",
+      "The platform behind RiftCompare and DexCompare — a reusable price-comparison engine.",
     description:
-      "A full-stack price-comparison platform — your destination to compare prices across categories, with sub-brands including RiftCompare and CamCompare. Built and deployed end-to-end on Vercel.",
+      "The umbrella platform powering RiftCompare, DexCompare and more: a reusable price-comparison engine that scrapes, normalises and serves live pricing across retailers, deployed as multiple consumer-facing sites.",
     domain: "Software",
     tags: ["TypeScript", "Next.js", "Full-Stack", "Vercel"],
     repo: "https://github.com/Specifxx/CompareEmpire",
     demo: "https://compare-empire.vercel.app",
-    featured: true,
-  },
-  {
-    slug: "tcg-empire",
-    title: "TCGEmpire",
-    blurb: "Trading-card-game marketplace and price platform, live on Vercel.",
-    description:
-      "A full-stack TypeScript platform for the trading-card-game market, focused on pricing and discovery. Deployed and live.",
-    domain: "Software",
-    tags: ["TypeScript", "Next.js", "Full-Stack", "Vercel"],
-    repo: "https://github.com/Specifxx/TCGEmpire",
-    demo: "https://tcg-empire.vercel.app",
   },
   {
     slug: "predictive-modelling",
@@ -109,5 +140,8 @@ export const projects: Project[] = [
     repo: "https://github.com/Specifxx/COMP1531-2023T1-Major-Project",
   },
 ];
+
+export const spotlightProjects = projects.filter((p) => p.spotlight);
+export const gridProjects = projects.filter((p) => !p.spotlight);
 
 export const domains = ["All", "Quant", "ML / Data", "Software"] as const;

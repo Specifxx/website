@@ -19,7 +19,7 @@ export const profile = {
   available: false,
   stats: [
     { label: "Currently", value: "Deloitte" },
-    { label: "Repositories shipped", value: "15+" },
+    { label: "Visits across live products", value: "12k+" },
     { label: "Peak strategy ROI", value: "124%" },
     { label: "Snipe latency", value: "<1s" },
   ],
