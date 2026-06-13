@@ -3,8 +3,8 @@ export const profile = {
   shortName: "Bill",
   roles: [
     "Data & AI Specialist",
+    "Data & AI Consultant",
     "Data Scientist",
-    "Machine Learning Engineer",
     "Software Engineer",
   ],
   tagline:
