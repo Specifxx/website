@@ -17,7 +17,7 @@ const description =
   "Bill Yang — Data Science & Software at UNSW. Quantitative developer and software engineer building trading systems, machine-learning pipelines, and full-stack products.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://billyang.dev"),
+  metadataBase: new URL("https://specifxx.github.io/website"),
   title: {
     default: `${profile.name} — Data Science · Software · Quant`,
     template: `%s — ${profile.name}`,
