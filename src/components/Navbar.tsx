@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Mail } from "lucide-react";
-import { GithubIcon } from "./ui/Icons";
+import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 import { profile } from "@/data/profile";
 
 const links = [
@@ -77,6 +77,15 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
+          <a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="grid h-9 w-9 place-items-center rounded-md border border-[var(--border)] text-muted transition-colors hover:border-accent hover:text-accent"
+          >
+            <LinkedinIcon className="h-4 w-4" />
+          </a>
           <a
             href={profile.github}
             target="_blank"

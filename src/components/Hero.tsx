@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
 import { ParticleField } from "./ui/ParticleField";
-import { GithubIcon } from "./ui/Icons";
+import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 
 export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -70,6 +70,16 @@ export function Hero() {
             >
               View selected work
               <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+            </a>
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface/60 px-5 py-3 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-accent"
+            >
+              <LinkedinIcon className="h-4 w-4" />
+              LinkedIn
+              <ArrowUpRight className="h-3.5 w-3.5 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <a
               href={profile.github}

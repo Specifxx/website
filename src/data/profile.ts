@@ -2,37 +2,39 @@ export const profile = {
   name: "Bill Yang",
   shortName: "Bill",
   roles: [
+    "Data & AI Specialist",
     "Data Scientist",
+    "Machine Learning Engineer",
     "Software Engineer",
-    "Quantitative Developer",
-    "Full-Stack Builder",
   ],
   tagline:
-    "Data Science & Software at UNSW. I build systems that find an edge — from sub-second trading bots to machine-learning pipelines and full-stack products.",
+    "Data & AI Specialist at Deloitte. I turn data into decisions — and build systems with an edge, from machine-learning pipelines to sub-second trading bots.",
   location: "Sydney, Australia",
   email: "bill.jyang101@gmail.com",
   github: "https://github.com/Specifxx",
   githubUser: "Specifxx",
+  linkedin: "https://www.linkedin.com/in/billyangdata/",
+  linkedinUser: "billyangdata",
   resumeUrl: "", // drop a /resume.pdf in /public and set this to "/resume.pdf"
-  available: true,
+  available: false,
   stats: [
+    { label: "Currently", value: "Deloitte" },
     { label: "Repositories shipped", value: "15+" },
     { label: "Peak strategy ROI", value: "124%" },
     { label: "Snipe latency", value: "<1s" },
-    { label: "Domains", value: "DS · SWE · Quant" },
   ],
 } as const;
 
 export const about = {
   paragraphs: [
-    "I'm a Data Science & Software student at UNSW with a builder's obsession for finding and exploiting structure in data. My work sits at the intersection of quantitative modelling, machine learning, and production software — whether that's a statistical edge engine, a real-time arbitrage bot, or a full-stack web platform.",
-    "I like problems where milliseconds and basis points matter. I've built trading systems that react in under a second, modelled probabilistic edges that returned triple-digit ROI, and trained ML pipelines on everything from biomedical signals to reinforcement-learning agents.",
-    "Currently looking for roles in quantitative development, data science, and software engineering where I can ship rigorous, measurable systems.",
+    "I'm a Data & AI Specialist at Deloitte, where I help turn messy, real-world data into decisions — building machine-learning models, analytics, and data products for clients across industries.",
+    "Outside of client work, I build systems that find an edge: real-time trading bots that react in under a second, statistical models with measurable returns, and full-stack products shipped end to end. I like problems where milliseconds and basis points matter.",
+    "I trained in Data Science & Software at UNSW, and I'm always up for talking shop on applied AI, data engineering, and quantitative systems.",
   ],
   highlights: [
+    "Applied AI & machine learning",
+    "Data science & analytics",
     "Quantitative & statistical modelling",
-    "Machine learning & reinforcement learning",
-    "Low-latency automation",
     "Full-stack TypeScript / Next.js",
   ],
 } as const;
@@ -48,7 +50,7 @@ export const skills: SkillGroup[] = [
     items: ["Python", "TypeScript", "JavaScript", "SQL", "R", "C"],
   },
   {
-    category: "Data Science & ML",
+    category: "Data Science & AI",
     items: [
       "scikit-learn",
       "PyTorch",
@@ -69,7 +71,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    category: "Web & Platform",
+    category: "Engineering & Platform",
     items: ["Next.js", "React", "Node.js", "REST APIs", "Vercel", "Git"],
   },
 ];
@@ -83,11 +85,18 @@ export type TimelineItem = {
 
 export const timeline: TimelineItem[] = [
   {
-    period: "2022 — Present",
+    period: "Present",
+    title: "Data & AI Specialist",
+    org: "Deloitte",
+    description:
+      "Delivering data and AI solutions for clients — building machine-learning models, analytics, and data products that drive measurable business outcomes.",
+  },
+  {
+    period: "2022 — 2025",
     title: "B. Data Science & Software",
     org: "UNSW Sydney",
     description:
-      "Coursework and major projects across machine learning (COMP9417), software engineering (COMP1531), and econometric modelling (ECON3203). Building production-grade projects alongside academic work.",
+      "Studied across machine learning (COMP9417), software engineering (COMP1531), and econometric modelling (ECON3203), shipping production-grade projects alongside coursework.",
   },
   {
     period: "Ongoing",

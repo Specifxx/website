@@ -10,6 +10,14 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-5">
           <a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            LinkedIn
+          </a>
+          <a
             href={profile.github}
             target="_blank"
             rel="noreferrer"

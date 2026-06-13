@@ -1,5 +1,5 @@
 import { ArrowUpRight, Mail, MapPin } from "lucide-react";
-import { GithubIcon } from "./ui/Icons";
+import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 import { Reveal } from "./ui/Reveal";
 import { profile } from "@/data/profile";
 
@@ -15,9 +15,8 @@ export function Contact() {
             <span className="text-gradient">measures up</span>.
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted">
-            I&apos;m open to quant developer, data science, and software
-            engineering roles. If you have a problem worth solving, my inbox is
-            open.
+            Whether it&apos;s a data &amp; AI problem, a collaboration, or just a
+            good technical conversation — my inbox is always open.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
@@ -27,6 +26,16 @@ export function Contact() {
             >
               <Mail className="h-4 w-4" />
               {profile.email}
+            </a>
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface/60 px-6 py-3.5 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-accent"
+            >
+              <LinkedinIcon className="h-4 w-4" />
+              LinkedIn
+              <ArrowUpRight className="h-3.5 w-3.5 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <a
               href={profile.github}
