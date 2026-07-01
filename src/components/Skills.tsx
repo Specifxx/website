@@ -6,7 +6,7 @@ export function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
       <SectionHeading
-        index="03"
+        index="04"
         kicker="Toolkit"
         title="The stack I reach for"
         description="Spanning quantitative modelling, machine learning, and production engineering."

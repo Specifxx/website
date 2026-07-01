@@ -9,7 +9,7 @@ export function Timeline() {
       className="relative border-t border-[var(--border)] bg-background-soft"
     >
       <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
-        <SectionHeading index="05" kicker="Trajectory" title="Education & experience" />
+        <SectionHeading index="06" kicker="Trajectory" title="Education & experience" />
 
         <div className="relative ml-2 border-l border-[var(--border-strong)] pl-8 sm:ml-3 sm:pl-10">
           {timeline.map((item, i) => (

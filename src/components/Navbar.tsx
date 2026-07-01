@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 import { profile } from "@/data/profile";
 
 const links = [
   { href: "#about", label: "About" },
-  { href: "#work", label: "Work" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#certifications", label: "Certs" },
   { href: "#path", label: "Path" },
@@ -55,9 +57,13 @@ export function Navbar() {
           href="#top"
           className="group flex items-center gap-2.5 text-sm font-semibold tracking-tight"
         >
-          <span className="grid h-7 w-7 place-items-center rounded-md border border-[var(--border-strong)] bg-surface text-accent transition-colors group-hover:border-accent">
-            BY
-          </span>
+          <Image
+            src="/bill-yang.png"
+            alt={profile.name}
+            width={28}
+            height={28}
+            className="h-7 w-7 rounded-full object-cover ring-1 ring-[var(--border-strong)] transition-all group-hover:ring-accent"
+          />
           <span className="hidden text-foreground sm:inline">{profile.name}</span>
         </a>
 

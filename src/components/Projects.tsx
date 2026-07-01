@@ -199,15 +199,15 @@ export function Projects() {
 
   return (
     <section
-      id="work"
+      id="projects"
       className="relative border-y border-[var(--border)] bg-background-soft"
     >
       <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
         <SectionHeading
-          index="02"
-          kicker="Selected Work"
-          title="Products people actually use"
-          description="My flagship work is a family of live price-comparison platforms used by thousands across the trading-card-game community — backed by daily data pipelines and built end to end. Below: AI tools, quant systems, and full-stack products across the rest of my work."
+          index="03"
+          kicker="Portfolio"
+          title="Featured Projects"
+          description="My flagship work is a family of live price-comparison platforms used by thousands across the trading-card-game community — backed by daily data pipelines and built end to end. Below: AI tools, quant systems, and full-stack products across the rest of my portfolio."
         />
 
         <div className="mb-16 grid gap-5 md:grid-cols-2">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { profile } from "@/data/profile";
 
@@ -63,6 +64,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
+        <Script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "643e7b36c2624405b0d3cbf5b7514872"}'
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
