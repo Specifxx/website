@@ -18,7 +18,7 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://specifxx.github.io/website"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://billyang.site"
   ),
   title: {
     default: `${profile.name} — AI & Data · Software · Quant`,

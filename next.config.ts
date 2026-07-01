@@ -1,13 +1,25 @@
 import type { NextConfig } from "next";
+import fs from "node:fs";
+import path from "node:path";
 
-// Derive the correct base path and canonical URL from the GitHub repository
-// name, so the site works whether it's deployed as a project page
-// (<user>.github.io/<repo>) or a user page (<user>.github.io) — including
-// after a username or repo rename. No manual config changes required.
+// Derive the correct base path and canonical URL automatically:
+// - If public/CNAME declares a custom domain, that domain always serves
+//   from the root, regardless of the repo name.
+// - Otherwise fall back to GitHub's default project/user page rules
+//   (<user>.github.io/<repo> vs <user>.github.io) — including after a
+//   username or repo rename. No manual config changes required either way.
 const isGithubPages = process.env.GITHUB_PAGES === "true";
 const ghRepository = process.env.GITHUB_REPOSITORY; // "owner/repo" on GitHub Actions
 
 function resolveDeployment() {
+  const cnamePath = path.join(process.cwd(), "public", "CNAME");
+  const customDomain = fs.existsSync(cnamePath)
+    ? fs.readFileSync(cnamePath, "utf8").trim()
+    : "";
+  if (customDomain) {
+    return { basePath: "", siteUrl: `https://${customDomain}` };
+  }
+
   if (!ghRepository) {
     return { basePath: "", siteUrl: "http://localhost:3000" };
   }
