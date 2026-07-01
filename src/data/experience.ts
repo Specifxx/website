@@ -81,6 +81,14 @@ export const clientEngagements: ClientEngagement[] = [
       "Advised on maturing the client's predictive ML modelling and MLOps processes, delivering a roadmap for more efficient stakeholder communication and legacy-system migration.",
     tags: ["MLOps", "Data Strategy", "Advisory"],
   },
+  {
+    client: "National Australia Bank (NAB)",
+    role: "Financial Crime Data Analyst Intern",
+    period: "Jul 2022 – Jan 2023",
+    summary:
+      "Automated a Python archiving system that eliminated a backlog of tens of thousands of output files and cut one job's runtime from 20 minutes to 50 seconds — a 24x speedup. Migrated legacy SAS code to Python, cutting runtime by 54% and turning a 3-step process into one, while using Power BI, SAS and SQL to extract data from Oracle databases and handling ad-hoc analysis requests for stakeholders in a highly confidential environment.",
+    tags: ["Power BI", "SAS", "Python", "SQL", "Automation"],
+  },
 ];
 
 export type CertGroup = {
