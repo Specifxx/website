@@ -97,7 +97,7 @@ export function Hero() {
 
           <div className="mt-14 flex items-center gap-2 text-xs text-faint">
             <MapPin className="h-3.5 w-3.5" />
-            Based in {profile.location} · Working globally
+            Based in {profile.location}
           </div>
         </motion.div>
       </div>

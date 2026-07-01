@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Bill Yang — Technical BA/PM at Deloitte, delivering data & AI programs for financial-services, insurance, and energy clients. Manages stakeholders from C-suite to engineers, with the technical fluency to lead data and GenAI initiatives credibly.";
+  "Bill Yang — AI & Data Professional at Deloitte, ensuring delivery of complex data & AI programs for financial-services, insurance, and energy clients. Manages stakeholders from C-suite to engineers, with the technical fluency to lead data engineering and AI initiatives credibly.";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://billyang.site";
 const title = `${profile.name} — AI & Data`;
