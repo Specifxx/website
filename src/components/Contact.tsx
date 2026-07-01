@@ -9,7 +9,7 @@ export function Contact() {
       <div className="aurora !opacity-30" />
       <div className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8 sm:py-36">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="mono-label mb-5">07 · Contact</p>
+          <p className="mono-label mb-5">08 · Contact</p>
           <h2 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
             Let&apos;s build something that{" "}
             <span className="text-gradient">measures up</span>.

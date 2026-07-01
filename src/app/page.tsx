@@ -7,6 +7,7 @@ import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Certifications } from "@/components/Certifications";
 import { Timeline } from "@/components/Timeline";
+import { Hobbies } from "@/components/Hobbies";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
@@ -25,6 +26,7 @@ export default function Home() {
         <Certifications />
         <Skills />
         <Timeline />
+        <Hobbies />
         <Contact />
       </main>
       <Footer />

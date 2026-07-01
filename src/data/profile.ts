@@ -40,6 +40,26 @@ export const about = {
   ],
 } as const;
 
+export type Hobby = {
+  icon: "activity" | "volleyball" | "book" | "cards" | "footprints" | "waves";
+  title: string;
+  detail?: string;
+};
+
+export const hobbies: Hobby[] = [
+  { icon: "activity", title: "Badminton" },
+  { icon: "volleyball", title: "Basketball", detail: "New York Knicks fan" },
+  {
+    icon: "book",
+    title: "Reading",
+    detail:
+      "Fiction & non-fiction — currently reading The Witcher; favourite non-fiction is Emotional Intelligence by Daniel Goleman",
+  },
+  { icon: "cards", title: "Strategy Card Games" },
+  { icon: "footprints", title: "Running", detail: "In winter" },
+  { icon: "waves", title: "Swimming", detail: "In summer" },
+];
+
 export type SkillGroup = {
   category: string;
   items: string[];
