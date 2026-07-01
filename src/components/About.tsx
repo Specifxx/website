@@ -33,8 +33,15 @@ export function About() {
 
         <Reveal delay={0.1}>
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--border)]">
-            {profile.stats.map((stat) => (
-              <div key={stat.label} className="flex flex-col bg-surface p-6">
+            {profile.stats.map((stat, i) => (
+              <div
+                key={stat.label}
+                className={`flex flex-col bg-surface p-6 ${
+                  profile.stats.length % 2 !== 0 && i === profile.stats.length - 1
+                    ? "col-span-2"
+                    : ""
+                }`}
+              >
                 <div className="font-mono text-2xl font-semibold text-accent sm:text-3xl">
                   {stat.value}
                 </div>

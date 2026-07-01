@@ -23,7 +23,6 @@ export const profile = {
         { label: "DexCompare", url: "https://dexcompare.app" },
       ],
     },
-    { label: "Peak strategy ROI", value: "124%" },
   ],
 } as const;
 
