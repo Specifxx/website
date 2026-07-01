@@ -11,6 +11,7 @@ export type Project = {
   demo?: string;
   featured?: boolean;
   spotlight?: boolean;
+  experimental?: boolean;
   audience?: string;
   highlights?: string[];
   metric?: { label: string; value: string };
@@ -71,9 +72,7 @@ export const projects: Project[] = [
       "An AI-powered teaching assistant for K-12 educators, built on Claude Opus 4.8 with prompt caching. It keeps persistent memory of each class and generates complete, differentiated daily lesson bundles — plans, slides, worksheets and exit tickets — so yesterday's results inform tomorrow's instruction.",
     domain: "AI / ML",
     tags: ["Next.js", "TypeScript", "Claude / LLMs", "Drizzle ORM", "pgvector"],
-    repo: "https://github.com/Specifxx/Claude",
     featured: true,
-    metric: { label: "Model", value: "Opus 4.8" },
   },
   {
     slug: "parkinsons-prediction",
@@ -127,48 +126,51 @@ export const projects: Project[] = [
     slug: "betarb",
     title: "Betarb",
     blurb:
-      "Self-hosted odds engine that models table-tennis matches to surface value bets against the market.",
+      "Sports-analytics odds engine that models table-tennis outcomes and benchmarks its predictions against market pricing.",
     description:
-      "A self-hosted dashboard that builds its own odds predictions for Czech Liga Pro table-tennis matches — scraping past results, modelling player form and fatigue, and blending Elo ratings with logistic regression and gradient boosting to find value against bookmaker markets.",
+      "A self-hosted analytics pipeline for Czech Liga Pro table-tennis: scrapes historical results, engineers player-form and fatigue features, and blends Elo ratings with logistic regression and gradient boosting into independent match-outcome probabilities — benchmarked against market pricing to measure model calibration.",
     domain: "Quant",
     tags: ["Python", "FastAPI", "Elo + ML", "Playwright", "SQLite"],
     repo: "https://github.com/Specifxx/Betarb",
     featured: true,
+    experimental: true,
   },
   {
     slug: "skinport-trading-bot",
     title: "Skinport Trading Bot",
     blurb:
-      "Sub-second arbitrage engine that snipes underpriced liquid items on a live marketplace.",
+      "Sub-second arbitrage engine that reacts to real-time price discrepancies on a live marketplace.",
     description:
-      "A real-time trading bot that continuously scans an online marketplace, identifies mispriced liquid items, and executes purchases in under a second to capture spread. Profits through arbitrage on the gap between listing and fair value.",
+      "A real-time trading bot that continuously monitors a live marketplace's order flow, detects listings priced below fair value, and executes purchases in under a second — an exercise in low-latency market-data processing and automated execution.",
     domain: "Quant",
     tags: ["JavaScript", "Algorithmic Trading", "Arbitrage", "WebSockets"],
     repo: "https://github.com/Specifxx/Skinport-trading-bot",
     metric: { label: "Reaction time", value: "<1s" },
+    experimental: true,
   },
   {
     slug: "csgoroll-profit-generator",
     title: "Statistical Edge Engine",
     blurb:
-      "Probabilistic modelling + web scraping to maintain a measurable house-beating edge.",
+      "Probabilistic modelling and backtesting engine for detecting measurable statistical edges in randomized processes.",
     description:
-      "A statistics-driven automation that combines web scraping with probability modelling to maintain a consistent 5–10% player edge against an online roulette platform. Achieved a documented 124% ROI over the tracked period.",
+      "A statistics-driven research project combining automated data collection with probability modelling to detect and backtest a measurable statistical edge in a randomized online game — focused on rigorous backtesting methodology and edge quantification rather than any single outcome.",
     domain: "Quant",
     tags: ["Python", "Statistics", "Probability", "Backtesting"],
     repo: "https://github.com/Specifxx/CSGORoll-Profit-Generator",
-    metric: { label: "Realized ROI", value: "124%" },
+    experimental: true,
   },
   {
     slug: "value-spread-betting",
-    title: "Value Spread Betting",
+    title: "Odds Arbitrage Scanner",
     blurb:
-      "+EV betting scanner that benchmarks Australian sportsbooks against the market and alerts on edges.",
+      "Real-time odds-monitoring pipeline that benchmarks Australian sportsbook pricing against a reference market and alerts on statistical edges.",
     description:
-      "A tool that identifies positive expected-value (+EV) betting opportunities by comparing odds from bet365 (as the market standard) against Australian sportsbooks like Sportsbet, surfacing bets above a configurable edge threshold and pushing alerts to Discord.",
+      "An automation that continuously compares real-time odds across a reference market and Australian sportsbooks, flagging statistically significant pricing discrepancies above a configurable threshold and pushing alerts — an exercise in real-time data-pipeline engineering and automated monitoring.",
     domain: "Quant",
     tags: ["Node.js", "Express", "Odds Modelling", "Automation"],
     repo: "https://github.com/Specifxx/valuespreadbetting",
+    experimental: true,
   },
 
   // ── Software & Platforms ───────────────────────────────────────────────

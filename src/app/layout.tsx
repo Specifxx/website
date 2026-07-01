@@ -15,39 +15,47 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Bill Yang — AI & Data Professional at Deloitte. Data scientist and software engineer building machine-learning systems, analytics, and full-stack products, with a quant's eye for measurable edge.";
+  "Bill Yang — Technical BA/PM at Deloitte, delivering data & AI programs for financial-services, insurance, and energy clients. Manages stakeholders from C-suite to engineers, with the technical fluency to lead data and GenAI initiatives credibly.";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://billyang.site";
+const title = `${profile.name} — Technical BA/PM`;
+const ogImageAlt = "Bill Yang — AI & Data Professional at Deloitte";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://billyang.site"
-  ),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: `${profile.name} — AI & Data · Software · Quant`,
+    default: title,
     template: `%s — ${profile.name}`,
   },
   description,
   keywords: [
     "Bill Yang",
-    "AI & Data Professional",
+    "Technical Business Analyst",
+    "Delivery Management",
+    "Stakeholder Management",
+    "Project Management",
     "Deloitte",
-    "Data Scientist",
-    "Software Engineer",
-    "Machine Learning",
-    "Artificial Intelligence",
+    "Consultant",
+    "Data & AI",
+    "GenAI",
     "Sydney",
   ],
   authors: [{ name: profile.name, url: profile.github }],
+  alternates: { canonical: siteUrl },
   openGraph: {
-    title: `${profile.name} — AI & Data · Software · Quant`,
+    title,
     description,
+    url: siteUrl,
     type: "website",
     locale: "en_AU",
     siteName: profile.name,
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: ogImageAlt }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} — AI & Data · Software · Quant`,
+    title,
     description,
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
 };

@@ -6,7 +6,7 @@ import { about, profile } from "@/data/profile";
 export function About() {
   return (
     <section id="about" className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
-      <SectionHeading index="01" kicker="Profile" title="Building systems with an edge" />
+      <SectionHeading index="01" kicker="Profile" title="Leading delivery for data & AI programs" />
 
       <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
         <Reveal className="space-y-5">
@@ -55,7 +55,7 @@ export function About() {
                         key={link.url}
                         href={link.url}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="group inline-flex items-center gap-1 rounded-full border border-[var(--border-strong)] px-2.5 py-1 text-[0.68rem] text-foreground transition-colors hover:border-accent hover:text-accent"
                       >
                         {link.label}

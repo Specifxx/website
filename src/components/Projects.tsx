@@ -80,7 +80,7 @@ function SpotlightCard({ project, index }: { project: Project; index: number }) 
             <a
               href={project.demo}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent shadow-sm shadow-accent/20 transition-transform hover:-translate-y-0.5"
             >
               <ExternalLink className="h-4 w-4" />
@@ -91,7 +91,7 @@ function SpotlightCard({ project, index }: { project: Project; index: number }) 
             <a
               href={project.repo}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-foreground"
             >
               <GithubIcon className="h-4 w-4" />
@@ -128,6 +128,11 @@ function ProjectCard({ project }: { project: Project }) {
               Live
             </span>
           ) : null}
+          {project.experimental ? (
+            <span className="rounded-full border border-[var(--border-strong)] px-2.5 py-1 font-mono text-[0.6rem] uppercase tracking-wider text-faint">
+              Personal R&D
+            </span>
+          ) : null}
         </div>
         {project.metric ? (
           <div className="text-right">
@@ -157,31 +162,33 @@ function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
 
-      <div className="mt-6 flex items-center gap-4 border-t border-[var(--border)] pt-5">
-        {project.repo ? (
-          <a
-            href={project.repo}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-foreground"
-          >
-            <GithubIcon className="h-4 w-4" />
-            Code
-          </a>
-        ) : null}
-        {project.demo ? (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-accent transition-colors hover:text-foreground"
-          >
-            <ExternalLink className="h-4 w-4" />
-            Live demo
-          </a>
-        ) : null}
-        <ArrowUpRight className="ml-auto h-4 w-4 text-faint transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent" />
-      </div>
+      {project.repo || project.demo ? (
+        <div className="mt-6 flex items-center gap-4 border-t border-[var(--border)] pt-5">
+          {project.repo ? (
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-foreground"
+            >
+              <GithubIcon className="h-4 w-4" />
+              Code
+            </a>
+          ) : null}
+          {project.demo ? (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm text-accent transition-colors hover:text-foreground"
+            >
+              <ExternalLink className="h-4 w-4" />
+              Live demo
+            </a>
+          ) : null}
+          <ArrowUpRight className="ml-auto h-4 w-4 text-faint transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent" />
+        </div>
+      ) : null}
     </motion.article>
   );
 }

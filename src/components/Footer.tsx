@@ -12,7 +12,7 @@ export function Footer() {
           <a
             href={profile.linkedin}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="transition-colors hover:text-foreground"
           >
             LinkedIn
@@ -20,7 +20,7 @@ export function Footer() {
           <a
             href={profile.github}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="transition-colors hover:text-foreground"
           >
             GitHub

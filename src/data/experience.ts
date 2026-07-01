@@ -12,7 +12,7 @@ export const clientEngagements: ClientEngagement[] = [
   {
     client: "Big 4 Australian Bank",
     role: "Business Analyst — Testing Strategy",
-    period: "Apr 2026",
+    period: "Apr 2026 (3 weeks)",
     summary:
       "Ran a 3-week rapid deep dive into the testing strategy for a $3.5bn migration program, designing and delivering 10 stakeholder workshops with the Deloitte UK team, culminating in a current-state assessment and implementation roadmap.",
     tags: ["Test Strategy", "Migration Program", "Stakeholder Workshops"],

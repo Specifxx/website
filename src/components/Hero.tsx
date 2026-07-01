@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
 import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 
@@ -28,7 +28,7 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
               </span>
-              Open to 2026 roles · Quant · DS · SWE
+              Open to 2026 roles · BA/PM · Delivery · Stakeholder Mgmt
             </div>
           ) : null}
 
@@ -37,7 +37,7 @@ export function Hero() {
           <div className="flex items-center gap-5 sm:gap-6">
             <Image
               src="/bill-yang.png"
-              alt={profile.name}
+              alt={`Portrait of ${profile.name}, AI & Data Professional at Deloitte`}
               width={112}
               height={112}
               priority
@@ -65,9 +65,18 @@ export function Hero() {
               <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
             </a>
             <a
+              href={profile.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+            >
+              <Download className="h-4 w-4" />
+              Download CV (PDF)
+            </a>
+            <a
               href={profile.linkedin}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <LinkedinIcon className="h-4 w-4" />
@@ -77,7 +86,7 @@ export function Hero() {
             <a
               href={profile.github}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <GithubIcon className="h-4 w-4" />

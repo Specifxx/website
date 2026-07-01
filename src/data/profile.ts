@@ -1,16 +1,16 @@
 export const profile = {
   name: "Bill Yang",
   shortName: "Bill",
-  title: "AI & Data Professional",
+  title: "AI & Data Professional at Deloitte",
   tagline:
-    "AI & Data Professional at Deloitte. I turn data into decisions — and build systems with an edge, from machine-learning pipelines to sub-second trading bots.",
+    "I lead delivery of complex data & AI programs for financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous problems into shipped outcomes.",
   location: "Sydney, Australia",
   email: "Bill.jyang.r@gmail.com",
   github: "https://github.com/Specifxx",
   githubUser: "Specifxx",
   linkedin: "https://www.linkedin.com/in/billyangdata/",
   linkedinUser: "billyangdata",
-  resumeUrl: "", // drop a /resume.pdf in /public and set this to "/resume.pdf"
+  resumeUrl: "/resume.pdf", // add the actual file at public/resume.pdf
   available: false,
   stats: [
     { label: "Currently", value: "Deloitte" },
@@ -28,15 +28,15 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "I'm a Data & AI Specialist at Deloitte, where I help turn messy, real-world data into decisions — building machine-learning models, analytics, and data products for clients across industries.",
-    "Outside of client work, I ship a lot: a family of live price-comparison platforms (RiftCompare, DexCompare), and quantitative trading and betting systems. I like problems where milliseconds and basis points matter.",
-    "I studied Data Science & Software at UNSW, and I'm always up for talking shop on applied AI, data engineering, and quantitative systems.",
+    "I'm a Technical BA/PM at Deloitte, leading delivery of complex data & AI programs for major financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous business problems into shipped outcomes.",
+    "Outside of client work, I ship a lot: a family of live price-comparison platforms (RiftCompare, DexCompare), and some personal R&D in quantitative systems. I like problems where milliseconds and basis points matter.",
+    "I studied Data Science & Software at UNSW, and I'm always up for talking shop on delivery, stakeholder management, and applied data & AI.",
   ],
   highlights: [
-    "Applied AI & machine learning",
-    "Data science & analytics",
-    "Quantitative & statistical modelling",
-    "Full-stack TypeScript / Next.js",
+    "Delivery & program management",
+    "Stakeholder & executive engagement",
+    "Agile / Scrum delivery",
+    "Technical fluency: data platforms & GenAI",
   ],
 } as const;
 
@@ -106,7 +106,7 @@ export type TimelineItem = {
 
 export const timeline: TimelineItem[] = [
   {
-    period: "2022 – Present",
+    period: "Feb 2023 – Present",
     title: "Data & AI Specialist",
     org: "Deloitte",
     description:
