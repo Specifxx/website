@@ -1,4 +1,4 @@
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 import { certificationCount, certifications } from "@/data/experience";
@@ -45,11 +45,23 @@ export function Certifications() {
               >
                 {group.certs.map((cert) => (
                   <li
-                    key={cert}
+                    key={cert.name}
                     className="flex items-start gap-2.5 text-sm leading-snug text-muted"
                   >
                     <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                    <span>{cert}</span>
+                    {cert.url ? (
+                      <a
+                        href={cert.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-start gap-1 text-foreground transition-colors hover:text-accent"
+                      >
+                        <span>{cert.name}</span>
+                        <ExternalLink className="mt-0.5 h-3 w-3 shrink-0 text-faint transition-colors group-hover:text-accent" />
+                      </a>
+                    ) : (
+                      <span>{cert.name}</span>
+                    )}
                   </li>
                 ))}
               </ul>

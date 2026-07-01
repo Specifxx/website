@@ -91,34 +91,52 @@ export const clientEngagements: ClientEngagement[] = [
   },
 ];
 
+export type Cert = {
+  name: string;
+  url?: string;
+};
+
 export type CertGroup = {
   issuer: string;
-  certs: string[];
+  certs: Cert[];
 };
 
 export const certifications: CertGroup[] = [
   {
     issuer: "Amazon Web Services",
     certs: [
-      "AWS Certified Solutions Architect – Professional",
-      "AWS Certified DevOps Engineer – Professional",
-      "AWS Certified Machine Learning – Specialty",
-      "AWS Certified Security – Specialty",
-      "AWS Certified Solutions Architect – Associate",
-      "AWS Certified Data Engineer – Associate",
-      "AWS Certified Developer – Associate",
-      "AWS Certified SysOps Engineer – Associate",
-      "AWS Certified AI Practitioner",
-      "AWS Certified Cloud Practitioner",
+      // TODO: paste in each Credly badge URL once Bill confirms which link
+      // matches which certification (badge URLs don't reveal the cert name).
+      { name: "AWS Certified Solutions Architect – Professional" },
+      { name: "AWS Certified DevOps Engineer – Professional" },
+      { name: "AWS Certified Machine Learning – Specialty" },
+      { name: "AWS Certified Security – Specialty" },
+      { name: "AWS Certified Solutions Architect – Associate" },
+      { name: "AWS Certified Data Engineer – Associate" },
+      { name: "AWS Certified Developer – Associate" },
+      { name: "AWS Certified SysOps Engineer – Associate" },
+      { name: "AWS Certified AI Practitioner" },
+      { name: "AWS Certified Cloud Practitioner" },
+      // 11th AWS cert (verified via AWS certmetrics, not Credly) — TODO: name + link.
     ],
   },
   {
     issuer: "Databricks",
-    certs: ["Databricks Certified Data Engineer Professional"],
+    certs: [
+      {
+        name: "Databricks Certified Data Engineer Professional",
+        url: "https://credentials.databricks.com/6b8b0d57-1f90-493b-8ed2-9bfce8007e17#acc.EqhJflT1",
+      },
+    ],
   },
   {
     issuer: "Microsoft",
-    certs: ["Microsoft Certified: Azure Data Fundamentals"],
+    certs: [
+      {
+        name: "Microsoft Certified: Azure Data Fundamentals",
+        url: "https://learn.microsoft.com/en-au/users/billyang-8739/credentials/30547143a972a3c6",
+      },
+    ],
   },
 ];
 
