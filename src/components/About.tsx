@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 import { about, profile } from "@/data/profile";
@@ -33,13 +34,29 @@ export function About() {
         <Reveal delay={0.1}>
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--border)]">
             {profile.stats.map((stat) => (
-              <div key={stat.label} className="bg-surface p-6">
+              <div key={stat.label} className="flex flex-col bg-surface p-6">
                 <div className="font-mono text-2xl font-semibold text-accent sm:text-3xl">
                   {stat.value}
                 </div>
                 <div className="mt-2 text-xs leading-snug text-muted">
                   {stat.label}
                 </div>
+                {"links" in stat && stat.links ? (
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {stat.links.map((link) => (
+                      <a
+                        key={link.url}
+                        href={link.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="group inline-flex items-center gap-1 rounded-full border border-[var(--border-strong)] px-2.5 py-1 text-[0.68rem] text-foreground transition-colors hover:border-accent hover:text-accent"
+                      >
+                        {link.label}
+                        <ArrowUpRight className="h-3 w-3 text-faint transition-colors group-hover:text-accent" />
+                      </a>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             ))}
           </div>

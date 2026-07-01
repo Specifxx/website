@@ -31,12 +31,12 @@ export const projects: Project[] = [
     demo: "https://riftcompare.com",
     spotlight: true,
     featured: true,
-    metric: { label: "Community visits", value: "10k+" },
+    metric: { label: "Monthly visits", value: "10k+" },
     highlights: [
       "Daily multi-retailer scraping and price normalisation across dozens of stores and eBay",
       "Full card database with search across singles and sealed products (boxes, packs, Proving Grounds, Nexus Night)",
       "Direct buy-through links that send players to the cheapest retailer",
-      "10,000+ organic visits from the Riftbound community",
+      "10,000+ monthly visits from the Riftbound community",
     ],
   },
   {
@@ -52,12 +52,12 @@ export const projects: Project[] = [
     demo: "https://dexcompare.app",
     spotlight: true,
     featured: true,
-    metric: { label: "Community visits", value: "2k+" },
+    metric: { label: "Monthly visits", value: "2k+" },
     highlights: [
       "Live prices aggregated across 29+ US retailers and eBay US",
       "Free card-value checker by card name and collector number",
       "Compare singles, booster boxes, ETBs and bundles in one place",
-      "2,000+ visits from Pokémon collectors and players",
+      "2,000+ monthly visits from Pokémon collectors and players",
     ],
   },
 

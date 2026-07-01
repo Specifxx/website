@@ -15,7 +15,14 @@ export const profile = {
   stats: [
     { label: "Currently", value: "Deloitte" },
     { label: "Live products shipped", value: "7+" },
-    { label: "Visits across live products", value: "12k+" },
+    {
+      label: "Monthly visits across live products",
+      value: "12k+",
+      links: [
+        { label: "RiftCompare", url: "https://riftcompare.com" },
+        { label: "DexCompare", url: "https://dexcompare.app" },
+      ],
+    },
     { label: "Peak strategy ROI", value: "124%" },
   ],
 } as const;
