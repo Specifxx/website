@@ -3,7 +3,7 @@ export const profile = {
   shortName: "Bill",
   title: "AI & Data Professional at Deloitte",
   tagline:
-    "I lead delivery of complex data & AI programs for financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous problems into shipped outcomes.",
+    "I ensure delivery of complex data & AI programs for financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous problems into shipped outcomes.",
   location: "Sydney, Australia",
   email: "Bill.jyang.r@gmail.com",
   github: "https://github.com/Specifxx",
@@ -28,7 +28,7 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "I'm a Technical BA/PM at Deloitte, leading delivery of complex data & AI programs for major financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous business problems into shipped outcomes.",
+    "I'm a Technical BA/PM at Deloitte, ensuring delivery of complex data & AI programs for major financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous business problems into shipped outcomes.",
     "Outside of client work, I ship a lot: a family of live price-comparison platforms (RiftCompare, DexCompare), and some personal R&D in quantitative systems. I like problems where milliseconds and basis points matter.",
     "I studied Data Science & Software at UNSW, and I'm always up for talking shop on delivery, stakeholder management, and applied data & AI.",
   ],
