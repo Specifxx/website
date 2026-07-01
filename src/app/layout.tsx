@@ -14,20 +14,20 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Bill Yang — Data & AI Specialist at Deloitte. Data scientist and software engineer building machine-learning systems, analytics, and full-stack products, with a quant's eye for measurable edge.";
+  "Bill Yang — AI & Data Professional at Deloitte. Data scientist and software engineer building machine-learning systems, analytics, and full-stack products, with a quant's eye for measurable edge.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "https://specifxx.github.io/website"
   ),
   title: {
-    default: `${profile.name} — Data & AI · Software · Quant`,
+    default: `${profile.name} — AI & Data · Software · Quant`,
     template: `%s — ${profile.name}`,
   },
   description,
   keywords: [
     "Bill Yang",
-    "Data & AI Specialist",
+    "AI & Data Professional",
     "Deloitte",
     "Data Scientist",
     "Software Engineer",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: profile.name, url: profile.github }],
   openGraph: {
-    title: `${profile.name} — Data & AI · Software · Quant`,
+    title: `${profile.name} — AI & Data · Software · Quant`,
     description,
     type: "website",
     locale: "en_AU",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} — Data & AI · Software · Quant`,
+    title: `${profile.name} — AI & Data · Software · Quant`,
     description,
   },
   robots: { index: true, follow: true },

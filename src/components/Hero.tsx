@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
@@ -8,16 +7,6 @@ import { ParticleField } from "./ui/ParticleField";
 import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 
 export function Hero() {
-  const [roleIndex, setRoleIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(
-      () => setRoleIndex((i) => (i + 1) % profile.roles.length),
-      2600
-    );
-    return () => clearInterval(id);
-  }, []);
-
   return (
     <section
       id="top"
@@ -53,9 +42,7 @@ export function Hero() {
 
           <div className="mt-5 flex h-9 items-center text-2xl font-medium text-muted sm:text-3xl">
             <span className="text-faint">$</span>
-            <span className="ml-3 min-w-[2ch] text-foreground">
-              {profile.roles[roleIndex]}
-            </span>
+            <span className="ml-3 text-foreground">{profile.title}</span>
             <span className="cursor-blink ml-1 inline-block h-7 w-[3px] translate-y-[2px] bg-accent" />
           </div>
 

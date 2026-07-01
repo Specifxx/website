@@ -1,14 +1,9 @@
 export const profile = {
   name: "Bill Yang",
   shortName: "Bill",
-  roles: [
-    "Data & AI Specialist",
-    "Data & AI Consultant",
-    "Data Scientist",
-    "Software Engineer",
-  ],
+  title: "AI & Data Professional",
   tagline:
-    "Data & AI Specialist at Deloitte. I turn data into decisions — and build systems with an edge, from machine-learning pipelines to sub-second trading bots.",
+    "AI & Data Professional at Deloitte. I turn data into decisions — and build systems with an edge, from machine-learning pipelines to sub-second trading bots.",
   location: "Sydney, Australia",
   email: "Bill.jyang.r@gmail.com",
   github: "https://github.com/Specifxx",
