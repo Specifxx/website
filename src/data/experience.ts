@@ -105,19 +105,50 @@ export const certifications: CertGroup[] = [
   {
     issuer: "Amazon Web Services",
     certs: [
-      // TODO: paste in each Credly badge URL once Bill confirms which link
-      // matches which certification (badge URLs don't reveal the cert name).
-      { name: "AWS Certified Solutions Architect – Professional" },
-      { name: "AWS Certified DevOps Engineer – Professional" },
-      { name: "AWS Certified Machine Learning – Specialty" },
-      { name: "AWS Certified Security – Specialty" },
-      { name: "AWS Certified Solutions Architect – Associate" },
-      { name: "AWS Certified Data Engineer – Associate" },
-      { name: "AWS Certified Developer – Associate" },
-      { name: "AWS Certified SysOps Engineer – Associate" },
-      { name: "AWS Certified AI Practitioner" },
-      { name: "AWS Certified Cloud Practitioner" },
-      // 11th AWS cert (verified via AWS certmetrics, not Credly) — TODO: name + link.
+      {
+        name: "AWS Certified Solutions Architect – Professional",
+        url: "https://www.credly.com/badges/ee4cf980-f69e-4431-9aaf-517307294031/linked_in_profile",
+      },
+      {
+        name: "AWS Certified DevOps Engineer – Professional",
+        url: "https://www.credly.com/badges/e1f0d396-538a-4248-bbd8-086920d3b036/linked_in_profile",
+      },
+      {
+        name: "AWS Certified Machine Learning – Specialty",
+        url: "https://www.credly.com/badges/bd5e92b8-8f54-4f98-a087-7ac9006dc21b/linked_in_profile",
+      },
+      {
+        name: "AWS Certified Security – Specialty",
+        url: "https://www.credly.com/badges/b24a203f-8e15-45ad-b7c7-78b7261f283b/linked_in_profile",
+      },
+      {
+        name: "AWS Certified Solutions Architect – Associate",
+        url: "https://www.credly.com/badges/8d7b3277-fb01-45c2-ae00-5080a714610a/linked_in_profile",
+      },
+      {
+        name: "AWS Certified Data Engineer – Associate",
+        url: "https://www.credly.com/badges/d09b3db6-be51-4f2a-9828-de1d415755ef/linked_in_profile",
+      },
+      {
+        name: "AWS Certified Machine Learning Engineer – Associate",
+        url: "https://www.credly.com/badges/b6ab964d-de82-4897-97c6-dd23e2daddb8/linked_in_profile",
+      },
+      {
+        name: "AWS Certified Developer – Associate",
+        url: "https://www.credly.com/badges/ed00f3dc-ab1c-4dba-9b22-70cfd0dedd44/linked_in_profile",
+      },
+      {
+        name: "AWS Certified SysOps Administrator – Associate",
+        url: "https://www.credly.com/badges/ec0b06fe-47cf-40dd-8349-c56b08944275/linked_in_profile",
+      },
+      {
+        name: "AWS Certified AI Practitioner",
+        url: "https://www.credly.com/badges/6e384d44-8875-4b4b-9e84-dbda81b39d47/linked_in_profile",
+      },
+      {
+        name: "AWS Certified Cloud Practitioner",
+        url: "https://cp.certmetrics.com/amazon/en/public/verify/credential/588f71db855d48e895546dd5d05bc818",
+      },
     ],
   },
   {
@@ -125,7 +156,7 @@ export const certifications: CertGroup[] = [
     certs: [
       {
         name: "Databricks Certified Data Engineer Professional",
-        url: "https://credentials.databricks.com/6b8b0d57-1f90-493b-8ed2-9bfce8007e17#acc.EqhJflT1",
+        url: "https://credentials.databricks.com/6b8b0d57-1f90-493b-8ed2-9bfce8007e17",
       },
     ],
   },
