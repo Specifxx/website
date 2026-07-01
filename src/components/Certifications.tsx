@@ -10,7 +10,7 @@ export function Certifications() {
       className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32"
     >
       <SectionHeading
-        index="05"
+        index="04"
         kicker="Credentials"
         title="Certifications"
         description={`${certificationCount} professional certifications across cloud, data engineering, and AI/ML.`}

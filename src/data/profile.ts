@@ -29,8 +29,8 @@ export const profile = {
 export const about = {
   paragraphs: [
     "I'm a Data & AI Specialist at Deloitte, where I help turn messy, real-world data into decisions — building machine-learning models, analytics, and data products for clients across industries.",
-    "Outside of client work, I ship a lot: a family of live price-comparison platforms (RiftCompare, DexCompare, AirfareCompare), quantitative trading and betting systems, an AI teaching assistant built on Claude, and equity-analysis tools. I like problems where milliseconds and basis points matter.",
-    "I trained in Data Science & Software at UNSW, and I'm always up for talking shop on applied AI, data engineering, and quantitative systems.",
+    "Outside of client work, I ship a lot: a family of live price-comparison platforms (RiftCompare, DexCompare), and quantitative trading and betting systems. I like problems where milliseconds and basis points matter.",
+    "I studied Data Science & Software at UNSW, and I'm always up for talking shop on applied AI, data engineering, and quantitative systems.",
   ],
   highlights: [
     "Applied AI & machine learning",
@@ -86,7 +86,7 @@ export type TimelineItem = {
 
 export const timeline: TimelineItem[] = [
   {
-    period: "Present",
+    period: "2022 – Present",
     title: "Data & AI Specialist",
     org: "Deloitte",
     description:
