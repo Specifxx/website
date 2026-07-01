@@ -17,7 +17,9 @@ const description =
   "Bill Yang — Data & AI Specialist at Deloitte. Data scientist and software engineer building machine-learning systems, analytics, and full-stack products, with a quant's eye for measurable edge.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://specifxx.github.io/website"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://specifxx.github.io/website"
+  ),
   title: {
     default: `${profile.name} — Data & AI · Software · Quant`,
     template: `%s — ${profile.name}`,

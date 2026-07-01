@@ -1,9 +1,11 @@
+export type Domain = "AI / ML" | "Quant" | "Software";
+
 export type Project = {
   slug: string;
   title: string;
   blurb: string;
   description: string;
-  domain: "Quant" | "ML / Data" | "Software";
+  domain: Domain;
   tags: string[];
   repo?: string;
   demo?: string;
@@ -15,6 +17,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  // ── Spotlight: the flagship live products ──────────────────────────────
   {
     slug: "riftcompare",
     title: "RiftCompare",
@@ -57,6 +60,81 @@ export const projects: Project[] = [
       "2,000+ visits from Pokémon collectors and players",
     ],
   },
+
+  // ── AI / ML ────────────────────────────────────────────────────────────
+  {
+    slug: "lessonloop",
+    title: "LessonLoop",
+    blurb:
+      "AI teaching assistant that generates differentiated K-12 lesson bundles with persistent class memory.",
+    description:
+      "An AI-powered teaching assistant for K-12 educators, built on Claude Opus 4.8 with prompt caching. It keeps persistent memory of each class and generates complete, differentiated daily lesson bundles — plans, slides, worksheets and exit tickets — so yesterday's results inform tomorrow's instruction.",
+    domain: "AI / ML",
+    tags: ["Next.js", "TypeScript", "Claude / LLMs", "Drizzle ORM", "pgvector"],
+    repo: "https://github.com/Specifxx/Claude",
+    featured: true,
+    metric: { label: "Model", value: "Opus 4.8" },
+  },
+  {
+    slug: "parkinsons-prediction",
+    title: "Parkinson's Disease Prediction",
+    blurb:
+      "ML pipeline predicting Parkinson's progression from biomedical voice measurements.",
+    description:
+      "COMP9417 major project: an end-to-end machine-learning pipeline that predicts Parkinson's disease indicators from biomedical voice features, covering feature engineering, model selection, and rigorous evaluation.",
+    domain: "AI / ML",
+    tags: ["Python", "scikit-learn", "Machine Learning", "Healthcare"],
+    repo: "https://github.com/Specifxx/COMP9417-Major-Project---Parkinson-s-Disease-Prediction",
+  },
+  {
+    slug: "chrome-dino-rl",
+    title: "Chrome Dino — RL + Computer Vision",
+    blurb:
+      "Reinforcement-learning agent that masters the Chrome Dino game from raw pixels.",
+    description:
+      "A reinforcement-learning agent that learns to play the Chrome Dino game, using computer vision to extract game state from the screen in real time and an RL policy to time jumps and ducks.",
+    domain: "AI / ML",
+    tags: ["Python", "Reinforcement Learning", "Computer Vision", "OpenCV"],
+    repo: "https://github.com/Specifxx/Mastering-the-Chrome-Dino-Game-using-RL-and-CV",
+  },
+  {
+    slug: "predictive-modelling",
+    title: "Predictive Modelling Project",
+    blurb:
+      "Econometrics major project applying regression and classification to real data.",
+    description:
+      "ECON3203 major project: a predictive-modelling study applying statistical learning, regression, and classification techniques to a real-world dataset, with emphasis on model interpretability and validation.",
+    domain: "AI / ML",
+    tags: ["Jupyter", "Predictive Modelling", "Econometrics", "Regression"],
+    repo: "https://github.com/Specifxx/ECON3203-2022T3-Major-Project-Predictive-Modelling",
+  },
+
+  // ── Quant & Trading ────────────────────────────────────────────────────
+  {
+    slug: "alpha-engine",
+    title: "Alpha Engine",
+    blurb:
+      "Formula-driven equity analysis app: a 5-factor model, blended price targets, and an ODTE upside radar.",
+    description:
+      "A stock-analysis web app that ranks US and Australian equities with a transparent 5-factor model, blends four valuation approaches into price targets, and runs an ODTE (0–2 day) upside radar to filter names that have already made their expected move.",
+    domain: "Quant",
+    tags: ["Next.js 16", "React 19", "TypeScript", "Recharts", "Vercel"],
+    repo: "https://github.com/Specifxx/janestreetmaxxing",
+    demo: "https://janestreetmaxxing.vercel.app",
+    featured: true,
+  },
+  {
+    slug: "betarb",
+    title: "Betarb",
+    blurb:
+      "Self-hosted odds engine that models table-tennis matches to surface value bets against the market.",
+    description:
+      "A self-hosted dashboard that builds its own odds predictions for Czech Liga Pro table-tennis matches — scraping past results, modelling player form and fatigue, and blending Elo ratings with logistic regression and gradient boosting to find value against bookmaker markets.",
+    domain: "Quant",
+    tags: ["Python", "FastAPI", "Elo + ML", "Playwright", "SQLite"],
+    repo: "https://github.com/Specifxx/Betarb",
+    featured: true,
+  },
   {
     slug: "skinport-trading-bot",
     title: "Skinport Trading Bot",
@@ -65,9 +143,8 @@ export const projects: Project[] = [
     description:
       "A real-time trading bot that continuously scans an online marketplace, identifies mispriced liquid items, and executes purchases in under a second to capture spread. Profits through arbitrage on the gap between listing and fair value.",
     domain: "Quant",
-    tags: ["JavaScript", "Algorithmic Trading", "Arbitrage", "WebSockets", "Automation"],
+    tags: ["JavaScript", "Algorithmic Trading", "Arbitrage", "WebSockets"],
     repo: "https://github.com/Specifxx/Skinport-trading-bot",
-    featured: true,
     metric: { label: "Reaction time", value: "<1s" },
   },
   {
@@ -78,55 +155,82 @@ export const projects: Project[] = [
     description:
       "A statistics-driven automation that combines web scraping with probability modelling to maintain a consistent 5–10% player edge against an online roulette platform. Achieved a documented 124% ROI over the tracked period.",
     domain: "Quant",
-    tags: ["Python", "Statistics", "Probability", "Web Scraping", "Backtesting"],
+    tags: ["Python", "Statistics", "Probability", "Backtesting"],
     repo: "https://github.com/Specifxx/CSGORoll-Profit-Generator",
-    featured: true,
     metric: { label: "Realized ROI", value: "124%" },
   },
   {
-    slug: "parkinsons-prediction",
-    title: "Parkinson's Disease Prediction",
+    slug: "value-spread-betting",
+    title: "Value Spread Betting",
     blurb:
-      "ML pipeline predicting Parkinson's progression from biomedical voice measurements.",
+      "+EV betting scanner that benchmarks Australian sportsbooks against the market and alerts on edges.",
     description:
-      "COMP9417 major project: an end-to-end machine-learning pipeline that predicts Parkinson's disease indicators from biomedical voice features, covering feature engineering, model selection, and rigorous evaluation.",
-    domain: "ML / Data",
-    tags: ["Python", "scikit-learn", "Machine Learning", "Healthcare", "Feature Engineering"],
-    repo: "https://github.com/Specifxx/COMP9417-Major-Project---Parkinson-s-Disease-Prediction",
+      "A tool that identifies positive expected-value (+EV) betting opportunities by comparing odds from bet365 (as the market standard) against Australian sportsbooks like Sportsbet, surfacing bets above a configurable edge threshold and pushing alerts to Discord.",
+    domain: "Quant",
+    tags: ["Node.js", "Express", "Odds Modelling", "Automation"],
+    repo: "https://github.com/Specifxx/valuespreadbetting",
+  },
+
+  // ── Software & Platforms ───────────────────────────────────────────────
+  {
+    slug: "airfare-compare",
+    title: "AirfareCompare",
+    blurb:
+      "Flight comparison that ranks fares on the true all-in price, with layover scoring and carbon impact.",
+    description:
+      "A flight-comparison platform that ranks airfares by their true all-in price — including taxes, baggage and seat fees — with honest price history, layover-quality scoring, multi-airport search and carbon-impact rankings, tackling the transparency gaps in tools like Google Flights and Skyscanner.",
+    domain: "Software",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Vercel"],
+    repo: "https://github.com/Specifxx/AirfareCompare",
+    demo: "https://airfare-compare.vercel.app",
+    featured: true,
   },
   {
-    slug: "chrome-dino-rl",
-    title: "Chrome Dino — RL + Computer Vision",
+    slug: "tcg-empire",
+    title: "TCGEmpire",
     blurb:
-      "Reinforcement-learning agent that masters the Chrome Dino game from raw pixels.",
+      "Australia's CSFloat-style marketplace for buying and selling Riftbound trading-card singles in AUD.",
     description:
-      "A reinforcement-learning agent that learns to play the Chrome Dino game, using computer vision to extract game state from the screen in real time and an RL policy to time jumps and ducks.",
-    domain: "ML / Data",
-    tags: ["Python", "Reinforcement Learning", "Computer Vision", "OpenCV"],
-    repo: "https://github.com/Specifxx/Mastering-the-Chrome-Dino-Game-using-RL-and-CV",
+      "A CSFloat-style marketplace MVP for Australian Riftbound trading cards, where users browse, filter, buy and sell card singles in AUD — with authentication, listings and a full data model.",
+    domain: "Software",
+    tags: ["Next.js", "TypeScript", "Prisma", "Auth", "Vercel"],
+    repo: "https://github.com/Specifxx/TCGEmpire",
+    demo: "https://tcg-empire.vercel.app",
   },
   {
     slug: "compare-empire",
     title: "CompareEmpire",
     blurb:
-      "The platform behind RiftCompare and DexCompare — a reusable price-comparison engine.",
+      "The platform behind RiftCompare, DexCompare and AirfareCompare — a reusable price-comparison engine.",
     description:
-      "The umbrella platform powering RiftCompare, DexCompare and more: a reusable price-comparison engine that scrapes, normalises and serves live pricing across retailers, deployed as multiple consumer-facing sites.",
+      "The umbrella platform powering RiftCompare, DexCompare, AirfareCompare and more: a reusable price-comparison engine that scrapes, normalises and serves live pricing across retailers, deployed as multiple consumer-facing sites.",
     domain: "Software",
     tags: ["TypeScript", "Next.js", "Full-Stack", "Vercel"],
     repo: "https://github.com/Specifxx/CompareEmpire",
     demo: "https://compare-empire.vercel.app",
   },
   {
-    slug: "predictive-modelling",
-    title: "Predictive Modelling Project",
+    slug: "protocol",
+    title: "Protocol",
     blurb:
-      "Econometrics major project applying regression and classification to real data.",
+      "Zero-dependency supplement tracker with real-time supply alerts and one-tap cheapest-price reorder.",
     description:
-      "ECON3203 major project: a predictive-modelling study applying statistical learning, regression, and classification techniques to a real-world dataset, with emphasis on model interpretability and validation.",
-    domain: "ML / Data",
-    tags: ["Jupyter", "Predictive Modelling", "Econometrics", "Regression"],
-    repo: "https://github.com/Specifxx/ECON3203-2022T3-Major-Project-Predictive-Modelling",
+      "A full-stack supplement-tracking and biohacking app for Australian users: real-time supply tracking, automatic low-stock alerts, and one-tap reordering at the cheapest verified retailer price — built from scratch on Node.js with zero npm dependencies and custom HMAC-signed sessions.",
+    domain: "Software",
+    tags: ["Node.js", "Zero-Dependency", "Custom Auth", "Vanilla JS"],
+    repo: "https://github.com/Specifxx/Protocol",
+  },
+  {
+    slug: "buzzer",
+    title: "Buzzer",
+    blurb:
+      "Automated print-on-demand studio turning NBA data into minimalist posters, published daily via Shopify.",
+    description:
+      "An automated print-on-demand business that renders minimalist data-art from iconic NBA moments using only factual data (scores, dates, coordinates). It scores moments, renders posters with Cairo, and publishes drafts to Shopify via Printify on a daily GitHub Actions cron.",
+    domain: "Software",
+    tags: ["Python", "Cairo", "NBA API", "Shopify / Printify", "Automation"],
+    repo: "https://github.com/Specifxx/Buzzer",
+    demo: "https://specifxx.github.io/Buzzer/",
   },
   {
     slug: "collab-tool",
@@ -144,4 +248,4 @@ export const projects: Project[] = [
 export const spotlightProjects = projects.filter((p) => p.spotlight);
 export const gridProjects = projects.filter((p) => !p.spotlight);
 
-export const domains = ["All", "Quant", "ML / Data", "Software"] as const;
+export const domains = ["All", "AI / ML", "Quant", "Software"] as const;

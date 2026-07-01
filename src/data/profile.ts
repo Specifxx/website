@@ -10,7 +10,7 @@ export const profile = {
   tagline:
     "Data & AI Specialist at Deloitte. I turn data into decisions — and build systems with an edge, from machine-learning pipelines to sub-second trading bots.",
   location: "Sydney, Australia",
-  email: "bill.jyang101@gmail.com",
+  email: "Bill.jyang.r@gmail.com",
   github: "https://github.com/Specifxx",
   githubUser: "Specifxx",
   linkedin: "https://www.linkedin.com/in/billyangdata/",
@@ -19,16 +19,16 @@ export const profile = {
   available: false,
   stats: [
     { label: "Currently", value: "Deloitte" },
+    { label: "Live products shipped", value: "7+" },
     { label: "Visits across live products", value: "12k+" },
     { label: "Peak strategy ROI", value: "124%" },
-    { label: "Snipe latency", value: "<1s" },
   ],
 } as const;
 
 export const about = {
   paragraphs: [
     "I'm a Data & AI Specialist at Deloitte, where I help turn messy, real-world data into decisions — building machine-learning models, analytics, and data products for clients across industries.",
-    "Outside of client work, I build systems that find an edge: real-time trading bots that react in under a second, statistical models with measurable returns, and full-stack products shipped end to end. I like problems where milliseconds and basis points matter.",
+    "Outside of client work, I ship a lot: a family of live price-comparison platforms (RiftCompare, DexCompare, AirfareCompare), quantitative trading and betting systems, an AI teaching assistant built on Claude, and equity-analysis tools. I like problems where milliseconds and basis points matter.",
     "I trained in Data Science & Software at UNSW, and I'm always up for talking shop on applied AI, data engineering, and quantitative systems.",
   ],
   highlights: [
@@ -55,7 +55,7 @@ export const skills: SkillGroup[] = [
       "scikit-learn",
       "PyTorch",
       "Pandas",
-      "NumPy",
+      "LLMs / Claude",
       "OpenCV",
       "Reinforcement Learning",
     ],
@@ -65,14 +65,14 @@ export const skills: SkillGroup[] = [
     items: [
       "Statistical Arbitrage",
       "Probabilistic Modelling",
+      "Elo Rating Systems",
       "Predictive Modelling",
-      "Econometrics",
       "Backtesting",
     ],
   },
   {
     category: "Engineering & Platform",
-    items: ["Next.js", "React", "Node.js", "REST APIs", "Vercel", "Git"],
+    items: ["Next.js", "React", "FastAPI", "Prisma", "Playwright", "Vercel"],
   },
 ];
 

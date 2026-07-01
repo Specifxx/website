@@ -118,9 +118,17 @@ function ProjectCard({ project }: { project: Project }) {
       className="card-glow group flex flex-col rounded-2xl border border-[var(--border)] bg-surface p-6"
     >
       <div className="mb-5 flex items-start justify-between gap-4">
-        <span className="rounded-full border border-[var(--border-strong)] px-3 py-1 font-mono text-[0.65rem] uppercase tracking-wider text-muted">
-          {project.domain}
-        </span>
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="rounded-full border border-[var(--border-strong)] px-3 py-1 font-mono text-[0.65rem] uppercase tracking-wider text-muted">
+            {project.domain}
+          </span>
+          {project.demo ? (
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-2.5 py-1 font-mono text-[0.6rem] uppercase tracking-wider text-accent">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              Live
+            </span>
+          ) : null}
+        </div>
         {project.metric ? (
           <div className="text-right">
             <div className="font-mono text-lg font-semibold text-accent">
@@ -199,7 +207,7 @@ export function Projects() {
           index="02"
           kicker="Selected Work"
           title="Products people actually use"
-          description="My flagship work is a family of live price-comparison platforms used by thousands across the trading-card-game community — backed by daily data pipelines and built end to end."
+          description="My flagship work is a family of live price-comparison platforms used by thousands across the trading-card-game community — backed by daily data pipelines and built end to end. Below: AI tools, quant systems, and full-stack products across the rest of my work."
         />
 
         <div className="mb-16 grid gap-5 md:grid-cols-2">
