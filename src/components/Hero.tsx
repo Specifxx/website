@@ -5,6 +5,7 @@ import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
 import { ParticleField } from "./ui/ParticleField";
 import { GithubIcon, LinkedinIcon } from "./ui/Icons";
+import { ClientExperience } from "./ClientExperience";
 
 export function Hero() {
   return (
@@ -58,6 +59,7 @@ export function Hero() {
               View selected work
               <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
             </a>
+            <ClientExperience />
             <a
               href={profile.linkedin}
               target="_blank"

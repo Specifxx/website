@@ -1,0 +1,120 @@
+export type ClientEngagement = {
+  client: string;
+  role: string;
+  period: string;
+  summary: string;
+  tags: string[];
+};
+
+// Client names are withheld per standard consulting confidentiality practice —
+// these descriptors match how the engagements are documented on the CV itself.
+export const clientEngagements: ClientEngagement[] = [
+  {
+    client: "Big 4 Australian Bank",
+    role: "Business Analyst — Testing Strategy",
+    period: "Apr 2026",
+    summary:
+      "Ran a 3-week rapid deep dive into the testing strategy for a $3.5bn migration program, designing and delivering 10 stakeholder workshops with the Deloitte UK team, culminating in a current-state assessment and implementation roadmap.",
+    tags: ["Test Strategy", "Migration Program", "Stakeholder Workshops"],
+  },
+  {
+    client: "Big 4 Australian Bank",
+    role: "Technical BA / PM — Business Rules Engine",
+    period: "Jun 2025 – Mar 2026",
+    summary:
+      "Led 3–4 workstreams delivering a Databricks + Prophecy business rules engine, facilitating technical forums of 50+ attendees across engineering and business teams and driving the platform to an on-time, in-scope go-live.",
+    tags: ["Databricks", "Prophecy", "Program Delivery"],
+  },
+  {
+    client: "Australian State Government Insurance Company",
+    role: "Data Analyst / Engineer — Data & Insights",
+    period: "Mar 2025 – Jun 2025",
+    summary:
+      "Built a GenAI workflow using Claude 3.7 to convert legacy SAS scripts to Snowflake SQL, engineered PII masking across hundreds of files, and wrote ETL stored procedures — cutting delivery time and resourcing cost by 50%.",
+    tags: ["Snowflake", "GenAI / Claude", "SQL", "PII Masking"],
+  },
+  {
+    client: "Multinational Australian Graphics Software Company",
+    role: "Data Strategy Consultant — Business Data Platforms",
+    period: "Feb 2025 – Mar 2025",
+    summary:
+      "Co-authored a data governance framework and ownership model as part of an IPO-readiness data strategy, engaging 20+ stakeholders across 21 workshops to shape a prioritised initiatives roadmap.",
+    tags: ["Data Governance", "Data Strategy", "IPO Readiness"],
+  },
+  {
+    client: "Multinational Dutch Bank",
+    role: "Business Analyst — Data Management Tooling",
+    period: "Sep 2024 – Dec 2024",
+    summary:
+      "Ran the RFP process to select an Enterprise Data Management tool vendor, designing the scoring model and leading consensus and shortlist presentation sessions with 10 business owners.",
+    tags: ["RFP", "Vendor Evaluation", "EDM"],
+  },
+  {
+    client: "Big 4 Australian Bank",
+    role: "Business Analyst — Generative AI Risk & Compliance MVP",
+    period: "Aug 2024 – Sep 2024",
+    summary:
+      "Delivered a GenAI copilot to streamline compliance-assessment workflows handling 16,000+ incidents a year — the first of 5 pioneer GenAI use cases piloted into production.",
+    tags: ["GenAI", "Risk & Compliance", "Copilot"],
+  },
+  {
+    client: "Big 4 Australian Bank",
+    role: "Gen AI Engineer — Policy Simplification POC",
+    period: "Jul 2024 – Aug 2024",
+    summary:
+      "Deployed LLM API endpoints in Azure ML Studio to summarise lengthy policy documents, designing evaluation metrics to benchmark GPT-4o, GPT-4, GPT-3.5 and Llama 3 on compression quality.",
+    tags: ["Azure ML", "LLM Evaluation", "GPT-4o", "Llama 3"],
+  },
+  {
+    client: "Major Australian Energy Retailer",
+    role: "Data Engineer — Databricks Data Platform MVP",
+    period: "May 2024 – Jul 2024",
+    summary:
+      "Built an ETL pipeline consolidating 6 data sources into a Databricks Unity Catalog Lakehouse (Bronze/Silver medallion layers) with Terraform-managed CI/CD — eliminating the client's prior data loss entirely.",
+    tags: ["Databricks", "PySpark", "Terraform", "AWS"],
+  },
+  {
+    client: "Major Australian Property Development Company",
+    role: "Data Strategy — Business Recommendations",
+    period: "Jan 2023 – Feb 2023",
+    summary:
+      "Advised on maturing the client's predictive ML modelling and MLOps processes, delivering a roadmap for more efficient stakeholder communication and legacy-system migration.",
+    tags: ["MLOps", "Data Strategy", "Advisory"],
+  },
+];
+
+export type CertGroup = {
+  issuer: string;
+  certs: string[];
+};
+
+export const certifications: CertGroup[] = [
+  {
+    issuer: "Amazon Web Services",
+    certs: [
+      "AWS Certified Solutions Architect – Professional",
+      "AWS Certified DevOps Engineer – Professional",
+      "AWS Certified Machine Learning – Specialty",
+      "AWS Certified Security – Specialty",
+      "AWS Certified Solutions Architect – Associate",
+      "AWS Certified Data Engineer – Associate",
+      "AWS Certified Developer – Associate",
+      "AWS Certified SysOps Engineer – Associate",
+      "AWS Certified AI Practitioner",
+      "AWS Certified Cloud Practitioner",
+    ],
+  },
+  {
+    issuer: "Databricks",
+    certs: ["Databricks Certified Data Engineer Professional"],
+  },
+  {
+    issuer: "Microsoft",
+    certs: ["Microsoft Certified: Azure Data Fundamentals"],
+  },
+];
+
+export const certificationCount = certifications.reduce(
+  (sum, group) => sum + group.certs.length,
+  0
+);
