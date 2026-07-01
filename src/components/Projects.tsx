@@ -81,7 +81,7 @@ function SpotlightCard({ project, index }: { project: Project; index: number }) 
               href={project.demo}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-lg bg-foreground px-4 py-2.5 text-sm font-medium text-[#05060a] transition-transform hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent shadow-sm shadow-accent/20 transition-transform hover:-translate-y-0.5"
             >
               <ExternalLink className="h-4 w-4" />
               Visit {project.title}

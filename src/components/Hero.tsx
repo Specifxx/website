@@ -3,7 +3,6 @@
 import { motion } from "motion/react";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
-import { ParticleField } from "./ui/ParticleField";
 import { GithubIcon, LinkedinIcon } from "./ui/Icons";
 import { ClientExperience } from "./ClientExperience";
 
@@ -14,8 +13,6 @@ export function Hero() {
       className="relative flex min-h-[100svh] items-center overflow-hidden pt-16"
     >
       <div className="aurora" />
-      <div className="absolute inset-0 grid-backdrop opacity-60" />
-      <ParticleField />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
 
       <div className="relative mx-auto w-full max-w-6xl px-5 sm:px-8">
@@ -26,7 +23,7 @@ export function Hero() {
           className="max-w-3xl"
         >
           {profile.available ? (
-            <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-[var(--border-strong)] bg-surface/70 px-3.5 py-1.5 text-xs text-muted backdrop-blur">
+            <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-[var(--border-strong)] bg-surface px-3.5 py-1.5 text-xs text-muted shadow-sm">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
@@ -41,11 +38,9 @@ export function Hero() {
             <span className="text-gradient">{profile.name}</span>
           </h1>
 
-          <div className="mt-5 flex h-9 items-center text-2xl font-medium text-muted sm:text-3xl">
-            <span className="text-faint">$</span>
-            <span className="ml-3 text-foreground">{profile.title}</span>
-            <span className="cursor-blink ml-1 inline-block h-7 w-[3px] translate-y-[2px] bg-accent" />
-          </div>
+          <p className="mt-5 text-2xl font-medium text-foreground sm:text-3xl">
+            {profile.title}
+          </p>
 
           <p className="mt-7 max-w-2xl text-pretty text-base leading-relaxed text-muted sm:text-lg">
             {profile.tagline}
@@ -54,7 +49,7 @@ export function Hero() {
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-[#05060a] transition-transform hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-medium text-on-accent shadow-sm shadow-accent/20 transition-transform hover:-translate-y-0.5"
             >
               View selected work
               <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
@@ -64,7 +59,7 @@ export function Hero() {
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface/60 px-5 py-3 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-accent"
+              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <LinkedinIcon className="h-4 w-4" />
               LinkedIn
@@ -74,7 +69,7 @@ export function Hero() {
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface/60 px-5 py-3 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-accent"
+              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <GithubIcon className="h-4 w-4" />
               GitHub

@@ -22,7 +22,7 @@ export function Contact() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <a
               href={`mailto:${profile.email}`}
-              className="group inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3.5 text-sm font-medium text-[#05060a] transition-transform hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-sm font-medium text-on-accent shadow-sm shadow-accent/20 transition-transform hover:-translate-y-0.5"
             >
               <Mail className="h-4 w-4" />
               {profile.email}
@@ -31,7 +31,7 @@ export function Contact() {
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface/60 px-6 py-3.5 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-accent"
+              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface px-6 py-3.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <LinkedinIcon className="h-4 w-4" />
               LinkedIn
@@ -41,7 +41,7 @@ export function Contact() {
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface/60 px-6 py-3.5 text-sm font-medium text-foreground backdrop-blur transition-colors hover:border-accent"
+              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface px-6 py-3.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <GithubIcon className="h-4 w-4" />
               @{profile.githubUser}

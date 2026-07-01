@@ -46,14 +46,14 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-[var(--border)] bg-[rgba(5,6,10,0.72)] backdrop-blur-xl"
+          ? "border-b border-[var(--border)] bg-[rgba(251,253,253,0.82)] backdrop-blur-xl"
           : "border-b border-transparent"
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <a
           href="#top"
-          className="group flex items-center gap-2.5 font-mono text-sm font-medium tracking-tight"
+          className="group flex items-center gap-2.5 text-sm font-semibold tracking-tight"
         >
           <span className="grid h-7 w-7 place-items-center rounded-md border border-[var(--border-strong)] bg-surface text-accent transition-colors group-hover:border-accent">
             BY
@@ -98,7 +98,7 @@ export function Navbar() {
           </a>
           <a
             href={`mailto:${profile.email}`}
-            className="hidden items-center gap-2 rounded-md border border-[var(--border-strong)] bg-foreground px-3.5 py-2 text-sm font-medium text-[#05060a] transition-opacity hover:opacity-90 sm:flex"
+            className="hidden items-center gap-2 rounded-md bg-accent px-3.5 py-2 text-sm font-medium text-on-accent shadow-sm shadow-accent/20 transition-opacity hover:opacity-90 sm:flex"
           >
             <Mail className="h-4 w-4" />
             Get in touch

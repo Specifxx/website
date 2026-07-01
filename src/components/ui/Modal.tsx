@@ -37,7 +37,7 @@ export function Modal({ open, onClose, title, subtitle, children }: ModalProps) 
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 bg-[rgba(5,6,10,0.75)] backdrop-blur-sm"
+            className="fixed inset-0 bg-[rgba(15,42,39,0.45)] backdrop-blur-sm"
             onClick={onClose}
             aria-hidden
           />
