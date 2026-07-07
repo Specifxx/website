@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ArrowDown, ArrowUpRight, Download, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
 import { GithubIcon, LinkedinIcon } from "./ui/Icons";
+import { PlaneBubble } from "./PlaneBubble";
 
 export function Hero() {
   return (
@@ -100,6 +101,8 @@ export function Hero() {
             Based in {profile.location}
           </div>
         </motion.div>
+
+        <PlaneBubble />
       </div>
     </section>
   );
