@@ -24,16 +24,16 @@ export function PlaneBubble() {
         <div className="overflow-hidden rounded-md">
           <Image
             src="/plane-coding.jpg"
-            alt="Bill coding on a laptop mid-flight on an airplane"
-            width={680}
-            height={510}
+            alt="Bill coding on a laptop mid-flight on an airplane, window visible"
+            width={820}
+            height={537}
             className="h-auto w-full"
           />
         </div>
         <figcaption className="px-1 pb-0.5 pt-2.5 text-center">
           <span className="flex items-center justify-center gap-1.5 text-[0.8rem] font-medium text-[#0f2a27]">
             <Plane className="h-3.5 w-3.5 text-accent" />
-            me + Claude, 40,000 ft
+            me + Claude Code, 40,000 ft
           </span>
           <span className="mt-0.5 block text-[0.68rem] italic text-[#4d6461]">
             turbulence-driven development
