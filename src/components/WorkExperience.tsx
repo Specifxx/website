@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { Sparkles } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 import { clientEngagements } from "@/data/experience";
@@ -9,12 +11,23 @@ export function WorkExperience() {
       className="relative border-y border-[var(--border)] bg-background-soft"
     >
       <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
-        <SectionHeading
-          index="02"
-          kicker="Career"
-          title="Work Experience"
-          description="Consulting engagements at Deloitte, most recent first. Client names are withheld per standard consulting confidentiality practice."
-        />
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <SectionHeading
+            index="02"
+            kicker="Career"
+            title="Work Experience"
+            description="Consulting engagements at Deloitte, most recent first. Client names are withheld per standard consulting confidentiality practice."
+          />
+          <Reveal delay={0.1} className="mb-12">
+            <Link
+              href="/ai-experience/"
+              className="group inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-surface px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+            >
+              <Sparkles className="h-4 w-4 text-accent" />
+              View AI Experience
+            </Link>
+          </Reveal>
+        </div>
 
         <Reveal>
           <div className="relative rounded-2xl border border-[var(--border)] bg-surface p-6 sm:p-8">
