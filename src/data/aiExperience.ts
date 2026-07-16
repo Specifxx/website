@@ -88,24 +88,12 @@ export const personalAiExperience: PersonalAiPractice[] = [
     title: "Agentic Development with Claude Code",
     period: "Ongoing",
     description:
-      "Bill uses Claude Code as a daily agentic pair-programmer across every personal project he ships — not as an autocomplete tool, but as an agent that plans, edits, runs builds/tests, and drives git/CI end-to-end. This site is itself a live example: it was designed, built, content-audited, and deployed through extended agentic sessions with Claude Code — multi-step planning, tool-orchestrated edits across a whole codebase, automated verification (lint, build, Playwright-driven visual/responsiveness audits), and GitHub Actions deploys, all driven conversationally.",
+      "Bill uses Claude Code as a daily agentic pair-programmer across every personal project he ships — not as an autocomplete tool, but as an agent that plans, edits, runs builds/tests, and drives git/CI end-to-end. This site is itself a live example: it was designed, built, content-audited, and deployed through extended agentic sessions with Claude Code — multi-step planning, tool-orchestrated edits across a whole codebase, automated verification (lint, build, Playwright-driven visual/responsiveness audits), and GitHub Actions deploys, all driven conversationally. The same practice is behind RiftCompare (riftcompare.com), a live Riftbound TCG price-comparison platform with 10,000+ monthly visits — Claude Code has been a hands-on development partner across its scraping pipeline, UI, and deployment, with Bill directing the architecture and reviewing every change.",
     highlights: [
       "Comfortable directing multi-step agentic workflows: planning, execution, and verification loops rather than single-shot prompts",
       "Hands-on with tool-use/orchestration patterns — file edits, shell commands, browser automation, CI/CD — chained together to ship real, deployed product",
-      "Applies the same agentic-coding fluency to iterate quickly across a portfolio of live side projects",
+      "RiftCompare (riftcompare.com) — a real, live product with real traffic, not a demo — built and iterated on with Claude Code as a development partner",
     ],
     stack: ["Claude Code", "Agentic workflows", "CI/CD", "Playwright"],
-  },
-  {
-    title: "LessonLoop — AI Teaching Assistant",
-    period: "Personal project",
-    description:
-      "An AI-powered teaching assistant for K-12 educators, built on Claude Opus 4.8 with prompt caching. It keeps persistent memory of each class and generates complete, differentiated daily lesson bundles — plans, slides, worksheets, and exit tickets — so yesterday's results inform tomorrow's instruction.",
-    highlights: [
-      "Persistent per-class memory via pgvector embeddings — a RAG-style architecture rather than stateless prompting",
-      "Prompt caching with Claude Opus 4.8 to keep latency and cost manageable across large, repeated context",
-      "Structured multi-artefact generation (plans, slides, worksheets, exit tickets) from a single LLM pipeline",
-    ],
-    stack: ["Next.js", "TypeScript", "Claude / LLMs", "Drizzle ORM", "pgvector"],
   },
 ];
