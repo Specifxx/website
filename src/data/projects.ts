@@ -64,17 +64,6 @@ export const projects: Project[] = [
 
   // ── AI / ML ────────────────────────────────────────────────────────────
   {
-    slug: "lessonloop",
-    title: "LessonLoop",
-    blurb:
-      "AI teaching assistant that generates differentiated K-12 lesson bundles with persistent class memory.",
-    description:
-      "An AI-powered teaching assistant for K-12 educators, built on Claude Opus 4.8 with prompt caching. It keeps persistent memory of each class and generates complete, differentiated daily lesson bundles — plans, slides, worksheets and exit tickets — so yesterday's results inform tomorrow's instruction.",
-    domain: "AI / ML",
-    tags: ["Next.js", "TypeScript", "Claude / LLMs", "Drizzle ORM", "pgvector"],
-    featured: true,
-  },
-  {
     slug: "parkinsons-prediction",
     title: "Parkinson's Disease Prediction",
     blurb:
