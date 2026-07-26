@@ -168,30 +168,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "tcg-empire",
-    title: "TCGEmpire",
-    blurb:
-      "Australia's CSFloat-style marketplace for buying and selling Riftbound trading-card singles in AUD.",
-    description:
-      "A CSFloat-style marketplace MVP for Australian Riftbound trading cards, where users browse, filter, buy and sell card singles in AUD — with authentication, listings and a full data model.",
-    domain: "Software",
-    tags: ["Next.js", "TypeScript", "Prisma", "Auth", "Vercel"],
-    repo: "https://github.com/Specifxx/TCGEmpire",
-    demo: "https://tcg-empire.vercel.app",
-  },
-  {
-    slug: "compare-empire",
-    title: "CompareEmpire",
-    blurb:
-      "The platform behind RiftCompare, DexCompare and AirfareCompare — a reusable price-comparison engine.",
-    description:
-      "The umbrella platform powering RiftCompare, DexCompare, AirfareCompare and more: a reusable price-comparison engine that scrapes, normalises and serves live pricing across retailers, deployed as multiple consumer-facing sites.",
-    domain: "Software",
-    tags: ["TypeScript", "Next.js", "Full-Stack", "Vercel"],
-    repo: "https://github.com/Specifxx/CompareEmpire",
-    demo: "https://compare-empire.vercel.app",
-  },
-  {
     slug: "protocol",
     title: "Protocol",
     blurb:
