@@ -48,18 +48,9 @@ export const projects: Project[] = [
     description:
       "A price-comparison platform for the Pokémon Trading Card Game. It tracks live prices for a comprehensive card database across 29+ US retailers and eBay, with a free value checker that surfaces real market value and the cheapest place to buy by card name and collector number.",
     domain: "Software",
-    audience: "Pokémon TCG",
     tags: ["TypeScript", "Next.js", "Web Scraping", "Data Pipeline", "Vercel"],
     demo: "https://dexcompare.app",
-    spotlight: true,
-    featured: true,
     metric: { label: "Monthly visits", value: "2k+" },
-    highlights: [
-      "Live prices aggregated across 29+ US retailers and eBay US",
-      "Free card-value checker by card name and collector number",
-      "Compare singles, booster boxes, ETBs and bundles in one place",
-      "2,000+ monthly visits from Pokémon collectors and players",
-    ],
   },
 
   // ── AI / ML ────────────────────────────────────────────────────────────
