@@ -23,11 +23,11 @@ export const projects: Project[] = [
     slug: "riftcompare",
     title: "RiftCompare",
     blurb:
-      "Live price-comparison engine for Riftbound, the League of Legends TCG — used by thousands of players.",
+      "Live price-comparison engine for Riftbound, a trading card game — used by thousands of players.",
     description:
-      "A live price-comparison platform for Riftbound (the League of Legends trading card game). It aggregates and normalises prices for every card across dozens of retailers plus eBay (AU / NZ / US), refreshes daily, and routes players straight to the cheapest place to buy singles and sealed product.",
+      "A live price-comparison platform for Riftbound, a trading card game. It aggregates and normalises prices for every card across dozens of retailers plus eBay (AU / NZ / US), refreshes daily, and routes players straight to the cheapest place to buy singles and sealed product.",
     domain: "Software",
-    audience: "Riftbound · League of Legends TCG",
+    audience: "Riftbound · Trading Card Game",
     tags: ["TypeScript", "Next.js", "Web Scraping", "Data Pipeline", "Vercel"],
     demo: "https://riftcompare.com",
     spotlight: true,
@@ -41,16 +41,22 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "dexcompare",
-    title: "DexCompare",
+    slug: "email-scanner",
+    title: "Email Scanner",
     blurb:
-      "Pokémon TCG price-comparison platform with a live card-value checker across 29+ stores.",
+      "Read-only Gmail search that finds what your inbox buried — describe what you're looking for in plain English.",
     description:
-      "A price-comparison platform for the Pokémon Trading Card Game. It tracks live prices for a comprehensive card database across 29+ US retailers and eBay, with a free value checker that surfaces real market value and the cheapest place to buy by card name and collector number.",
+      "A read-only Gmail search tool: type what you're looking for the way you'd say it out loud, and it returns matching messages ranked by relevance across every connected mailbox. Emails are never opened, and nothing is sent to an AI — built privacy-first from the ground up.",
     domain: "Software",
-    tags: ["TypeScript", "Next.js", "Web Scraping", "Data Pipeline", "Vercel"],
-    demo: "https://dexcompare.app",
-    metric: { label: "Monthly visits", value: "2k+" },
+    tags: ["Gmail", "Search", "Privacy-First", "Read-Only"],
+    demo: "https://www.scanmyemails.com",
+    spotlight: true,
+    featured: true,
+    highlights: [
+      "Plain-English search across every connected Gmail mailbox, ranked by relevance",
+      "Read-only by design — emails are never opened or modified",
+      "Nothing sent to an AI or third party — privacy-first from the ground up",
+    ],
   },
 
   // ── AI / ML ────────────────────────────────────────────────────────────

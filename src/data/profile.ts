@@ -14,14 +14,11 @@ export const profile = {
   available: false,
   stats: [
     { label: "Currently", value: "Deloitte" },
-    { label: "Live products shipped", value: "7+" },
+    { label: "Live products shipped", value: "5" },
     {
       label: "Monthly visits across live products",
-      value: "12k+",
-      links: [
-        { label: "RiftCompare", url: "https://riftcompare.com" },
-        { label: "DexCompare", url: "https://dexcompare.app" },
-      ],
+      value: "10k+",
+      links: [{ label: "RiftCompare", url: "https://riftcompare.com" }],
     },
   ],
 } as const;
@@ -29,7 +26,7 @@ export const profile = {
 export const about = {
   paragraphs: [
     "I'm an AI & Data Professional at Deloitte, ensuring delivery of complex data & AI programs for major financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous business problems into shipped outcomes.",
-    "Outside of client work, I ship a lot: a family of live price-comparison platforms (RiftCompare, DexCompare), and some personal R&D in quantitative systems. I like problems where milliseconds and basis points matter.",
+    "Outside of client work, I ship a lot: RiftCompare, a live price-comparison platform for the Riftbound trading card game; Email Scanner, a privacy-first plain-English Gmail search tool; and some personal R&D in quantitative systems. I like problems where milliseconds and basis points matter.",
     "I studied Data Science & Software at UNSW, and I'm always up for talking shop on delivery, stakeholder management, and applied data & AI.",
   ],
   highlights: [
