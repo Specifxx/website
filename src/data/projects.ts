@@ -50,13 +50,6 @@ export const projects: Project[] = [
     domain: "Software",
     tags: ["Gmail", "Search", "Privacy-First", "Read-Only"],
     demo: "https://www.scanmyemails.com",
-    spotlight: true,
-    featured: true,
-    highlights: [
-      "Plain-English search across every connected Gmail mailbox, ranked by relevance",
-      "Read-only by design — emails are never opened or modified",
-      "Nothing sent to an AI or third party — privacy-first from the ground up",
-    ],
   },
 
   // ── AI / ML ────────────────────────────────────────────────────────────

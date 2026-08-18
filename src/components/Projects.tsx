@@ -214,7 +214,7 @@ export function Projects() {
           index="03"
           kicker="Portfolio"
           title="Featured Projects"
-          description="My flagship work spans a live price-comparison platform used by thousands across the trading-card-game community, and a privacy-first tool for searching Gmail in plain English. Below: AI tools, quant systems, and full-stack products across the rest of my portfolio."
+          description="My flagship work is a live price-comparison platform used by thousands across the trading-card-game community — backed by daily data pipelines and built end to end. Below: AI tools, quant systems, and full-stack products across the rest of my portfolio."
         />
 
         <div
