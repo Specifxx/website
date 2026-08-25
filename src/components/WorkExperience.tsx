@@ -16,7 +16,7 @@ export function WorkExperience() {
             index="02"
             kicker="Career"
             title="Work Experience"
-            description="Consulting engagements at Deloitte, most recent first. Client names are withheld per standard consulting confidentiality practice."
+            description="Consulting engagements from my time at Deloitte (Feb 2023 – Aug 2026), most recent first. Client names are withheld per standard consulting confidentiality practice."
           />
           <Reveal delay={0.1} className="mb-12">
             <Link

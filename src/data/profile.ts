@@ -1,9 +1,9 @@
 export const profile = {
   name: "Bill Yang",
   shortName: "Bill",
-  title: "AI & Data Professional at Deloitte",
+  title: "Senior Consultant, Data & AI at Novigi",
   tagline:
-    "I ensure delivery of complex data & AI programs for financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous problems into shipped outcomes.",
+    "I ensure delivery of complex data & AI programs — managing stakeholders from C-suite to engineers and turning ambiguous problems into shipped outcomes.",
   location: "Sydney, Australia",
   email: "Bill.jyang.r@gmail.com",
   github: "https://github.com/Specifxx",
@@ -13,7 +13,7 @@ export const profile = {
   resumeUrl: "/resume.pdf", // add the actual file at public/resume.pdf
   available: false,
   stats: [
-    { label: "Currently", value: "Deloitte" },
+    { label: "Currently", value: "Novigi" },
     { label: "Live products shipped", value: "5" },
     {
       label: "Monthly visits across live products",
@@ -25,7 +25,7 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "I'm an AI & Data Professional at Deloitte, ensuring delivery of complex data & AI programs for major financial-services, insurance, and energy clients — managing stakeholders from C-suite to engineers and turning ambiguous business problems into shipped outcomes.",
+    "I'm a Senior Consultant, Data & AI at Novigi, ensuring delivery of complex data & AI programs — managing stakeholders from C-suite to engineers and turning ambiguous business problems into shipped outcomes.",
     "Outside of client work, I ship a lot: RiftCompare, a live price-comparison platform for the Riftbound trading card game; Email Scanner, a privacy-first plain-English Gmail search tool; and some personal R&D in quantitative systems. I like problems where milliseconds and basis points matter.",
     "I studied Data Science & Software at UNSW, and I'm always up for talking shop on delivery, stakeholder management, and applied data & AI.",
   ],
@@ -102,11 +102,18 @@ export type TimelineItem = {
 
 export const timeline: TimelineItem[] = [
   {
-    period: "Feb 2023 – Present",
+    period: "Aug 2026 – Present",
+    title: "Senior Consultant, Data & AI",
+    org: "Novigi",
+    description:
+      "Leading data and AI consulting engagements for clients as a Senior Consultant.",
+  },
+  {
+    period: "Feb 2023 – Aug 2026",
     title: "Data & AI Specialist",
     org: "Deloitte",
     description:
-      "Delivering data and AI solutions for clients — building machine-learning models, analytics, and data products that drive measurable business outcomes.",
+      "Delivered data and AI solutions for clients — building machine-learning models, analytics, and data products that drove measurable business outcomes.",
   },
   {
     period: "2022 — 2025",

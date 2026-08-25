@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Bill Yang — AI & Data Professional at Deloitte, ensuring delivery of complex data & AI programs for financial-services, insurance, and energy clients. Manages stakeholders from C-suite to engineers, with the technical fluency to lead data engineering and AI initiatives credibly.";
+  "Bill Yang — Senior Consultant, Data & AI at Novigi, ensuring delivery of complex data & AI programs. Manages stakeholders from C-suite to engineers, with the technical fluency to lead data engineering and AI initiatives credibly.";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://billyang.site";
 const title = `${profile.name} — AI & Data`;
-const ogImageAlt = "Bill Yang — AI & Data Professional at Deloitte";
+const ogImageAlt = "Bill Yang — Senior Consultant, Data & AI at Novigi";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "Delivery Management",
     "Stakeholder Management",
     "Project Management",
-    "Deloitte",
+    "Novigi",
     "Consultant",
     "Data & AI",
     "GenAI",

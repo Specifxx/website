@@ -38,7 +38,7 @@ export function Hero() {
           <div className="flex items-center gap-5 sm:gap-6">
             <Image
               src="/bill-yang.png"
-              alt={`Portrait of ${profile.name}, AI & Data Professional at Deloitte`}
+              alt={`Portrait of ${profile.name}, Senior Consultant, Data & AI at Novigi`}
               width={112}
               height={112}
               priority
