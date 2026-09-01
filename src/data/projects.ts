@@ -37,7 +37,7 @@ export const projects: Project[] = [
       "Daily multi-retailer scraping and price normalisation across dozens of stores and eBay",
       "Full card database with search across singles and sealed products (boxes, packs, Proving Grounds, Nexus Night)",
       "Direct buy-through links that send players to the cheapest retailer",
-      "10,000+ monthly visits from the Riftbound community",
+      "10,000+ monthly visits from the Riftbound community, with 10+ active paying subscribers generating $100+ MRR",
     ],
   },
   {
