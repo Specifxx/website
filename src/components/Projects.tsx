@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowUpRight, Check, ExternalLink } from "lucide-react";
 import { GithubIcon } from "./ui/Icons";
@@ -62,6 +63,23 @@ function SpotlightCard({ project, index }: { project: Project; index: number }) 
               </li>
             ))}
           </ul>
+        ) : null}
+
+        {project.proof ? (
+          <figure className="relative mt-6">
+            <div className="overflow-hidden rounded-xl border border-[var(--border-strong)] bg-[#0b0b0b] shadow-sm">
+              <Image
+                src={project.proof.src}
+                alt={project.proof.alt}
+                width={project.proof.width}
+                height={project.proof.height}
+                className="h-auto w-full"
+              />
+            </div>
+            <figcaption className="mt-2 font-mono text-[0.65rem] text-faint">
+              {project.proof.caption}
+            </figcaption>
+          </figure>
         ) : null}
 
         <div className="relative mt-6 flex flex-wrap gap-2">

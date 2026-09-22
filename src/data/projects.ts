@@ -15,6 +15,8 @@ export type Project = {
   audience?: string;
   highlights?: string[];
   metric?: { label: string; value: string };
+  /** Optional screenshot shown on spotlight cards as evidence for the metric (e.g. an analytics dashboard). */
+  proof?: { src: string; alt: string; caption: string; width: number; height: number };
 };
 
 export const projects: Project[] = [
@@ -39,6 +41,13 @@ export const projects: Project[] = [
       "Direct buy-through links that send players to the cheapest retailer",
       "10,000+ monthly visits from the Riftbound community, with 10+ active paying subscribers generating $100+ MRR",
     ],
+    proof: {
+      src: "/riftcompare-analytics.png",
+      alt: "Vercel Analytics dashboard for riftcompare.com showing 11,015 visitors and 36,999 page views over the last 30 days",
+      caption: "Vercel Analytics · last 30 days (Sep 2026) · 11,015 visitors · 36,999 page views",
+      width: 1400,
+      height: 544,
+    },
   },
   {
     slug: "email-scanner",
