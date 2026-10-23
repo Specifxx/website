@@ -17,7 +17,7 @@ export const profile = {
     { label: "Live products shipped", value: "5" },
     {
       label: "Monthly visits across live products",
-      value: "10k+",
+      value: "25k+",
       links: [{ label: "RiftCompare", url: "https://riftcompare.com" }],
     },
   ],

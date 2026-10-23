@@ -34,12 +34,12 @@ export const projects: Project[] = [
     demo: "https://riftcompare.com",
     spotlight: true,
     featured: true,
-    metric: { label: "Monthly visits", value: "10k+" },
+    metric: { label: "Monthly visits", value: "25k+" },
     highlights: [
       "Daily multi-retailer scraping and price normalisation across dozens of stores and eBay",
       "Full card database with search across singles and sealed products (boxes, packs, Proving Grounds, Nexus Night)",
       "Direct buy-through links that send players to the cheapest retailer",
-      "10,000+ monthly visits from the Riftbound community, with 10+ active paying subscribers generating $100+ MRR",
+      "25,000+ monthly visits from the Riftbound community, growing 50%+ month-over-month and generating $1,500+ MRR — mainly through retailer affiliate links",
     ],
     proof: {
       src: "/riftcompare-analytics.png",
