@@ -43,10 +43,10 @@ export const projects: Project[] = [
     ],
     proof: {
       src: "/riftcompare-analytics.png",
-      alt: "Vercel Analytics dashboard for riftcompare.com showing 11,015 visitors and 36,999 page views over the last 30 days",
-      caption: "Vercel Analytics · last 30 days (Sep 2026) · 11,015 visitors · 36,999 page views",
-      width: 1400,
-      height: 544,
+      alt: "Vercel Analytics for riftcompare.com over the last 90 days: 44,939 visitors (+689%) and 126,263 page views (+459%), with daily traffic climbing from ~200 to 1,000+",
+      caption: "Vercel Analytics · last 90 days (Jul–Oct 2026) · 44,939 visitors · 126,263 page views",
+      width: 1578,
+      height: 486,
     },
   },
   {

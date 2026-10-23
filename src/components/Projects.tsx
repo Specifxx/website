@@ -67,7 +67,7 @@ function SpotlightCard({ project, index }: { project: Project; index: number }) 
 
         {project.proof ? (
           <figure className="relative mt-6">
-            <div className="overflow-hidden rounded-xl border border-[var(--border-strong)] bg-[#0b0b0b] shadow-sm">
+            <div className="overflow-hidden rounded-xl border border-[var(--border)] bg-white p-3">
               <Image
                 src={project.proof.src}
                 alt={project.proof.alt}
