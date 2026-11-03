@@ -8,12 +8,11 @@ import { profile } from "@/data/profile";
 
 const links = [
   { href: "#about", label: "About" },
+  { href: "#compare-empire", label: "Compare Empire" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
-  { href: "#certifications", label: "Certs" },
   { href: "#skills", label: "Skills" },
   { href: "#path", label: "Path" },
-  { href: "#hobbies", label: "Hobbies" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -66,7 +65,7 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled || mobileOpen
-          ? "border-b border-[var(--border)] bg-[rgba(251,253,253,0.82)] backdrop-blur-xl"
+          ? "border-b border-[var(--border)] bg-[color-mix(in_srgb,var(--background)_82%,transparent)] backdrop-blur-xl"
           : "border-b border-transparent"
       }`}
     >

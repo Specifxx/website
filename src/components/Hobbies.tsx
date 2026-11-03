@@ -17,7 +17,7 @@ export function Hobbies() {
   return (
     <section id="hobbies" className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
       <SectionHeading
-        index="07"
+        index="08"
         kicker="Off the Clock"
         title="Hobbies & Interests"
         description="A few things I spend time on outside of work and code."

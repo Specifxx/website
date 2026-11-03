@@ -13,7 +13,7 @@ export function WorkExperience() {
       <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading
-            index="02"
+            index="03"
             kicker="Career"
             title="Work Experience"
             description="Consulting engagements from my time at Deloitte (Feb 2023 – Aug 2026), most recent first. Client names are withheld per standard consulting confidentiality practice."

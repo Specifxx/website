@@ -14,6 +14,7 @@ export function Hero() {
       className="relative flex min-h-[100svh] items-center overflow-hidden pt-16"
     >
       <div className="aurora" />
+      <div className="dot-grid" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
 
       <div className="relative mx-auto w-full max-w-6xl px-5 sm:px-8">
@@ -32,6 +33,17 @@ export function Hero() {
               Open to 2026 roles · BA/PM · Delivery · Stakeholder Mgmt
             </div>
           ) : null}
+
+          <a
+            href="#compare-empire"
+            className="group mb-7 inline-flex items-center gap-2.5 rounded-full border border-[var(--border-strong)] bg-surface/80 py-1.5 pl-1.5 pr-3.5 text-xs text-muted shadow-sm backdrop-blur transition-colors hover:border-accent hover:text-foreground"
+          >
+            <span className="rounded-full bg-accent px-2 py-0.5 font-semibold text-on-accent">
+              New
+            </span>
+            {profile.venture.name} · {profile.venture.detail}
+            <ArrowUpRight className="h-3.5 w-3.5 text-faint transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" />
+          </a>
 
           <p className="mono-label mb-5">{profile.location}</p>
 
@@ -59,10 +71,10 @@ export function Hero() {
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
-              href="#projects"
+              href="#compare-empire"
               className="group inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-medium text-on-accent shadow-sm shadow-accent/20 transition-transform hover:-translate-y-0.5"
             >
-              View featured projects
+              Explore Compare Empire
               <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
             </a>
             <a
