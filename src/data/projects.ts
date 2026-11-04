@@ -20,35 +20,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  // ── Spotlight: the flagship live products ──────────────────────────────
-  {
-    slug: "riftcompare",
-    title: "RiftCompare",
-    blurb:
-      "Live price-comparison engine for Riftbound, a trading card game — used by thousands of players.",
-    description:
-      "A live price-comparison platform for Riftbound, a trading card game. It aggregates and normalises prices for every card across dozens of retailers plus eBay (AU / NZ / US), refreshes daily, and routes players straight to the cheapest place to buy singles and sealed product.",
-    domain: "Software",
-    audience: "Riftbound · Trading Card Game",
-    tags: ["TypeScript", "Next.js", "Web Scraping", "Data Pipeline", "Vercel"],
-    demo: "https://riftcompare.com",
-    spotlight: true,
-    featured: true,
-    metric: { label: "Monthly visits", value: "25k+" },
-    highlights: [
-      "Daily multi-retailer scraping and price normalisation across dozens of stores and eBay",
-      "Full card database with search across singles and sealed products (boxes, packs, Proving Grounds, Nexus Night)",
-      "Direct buy-through links that send players to the cheapest retailer",
-      "25,000+ monthly visits from the Riftbound community, growing 50%+ month-over-month and generating $1,500+ MRR — mainly through retailer affiliate links",
-    ],
-    proof: {
-      src: "/riftcompare-analytics.png",
-      alt: "Vercel Analytics for riftcompare.com over the last 90 days: 44,939 visitors (+689%) and 126,263 page views (+459%), with daily traffic climbing from ~200 to 1,000+",
-      caption: "Vercel Analytics · last 90 days (Jul–Oct 2026) · 44,939 visitors · 126,263 page views",
-      width: 1578,
-      height: 486,
-    },
-  },
+  // ── Spotlight (RiftCompare and the Compare Empire suite live in src/data/suite.ts) ──
   {
     slug: "email-scanner",
     title: "Email Scanner",
@@ -162,6 +134,18 @@ export const projects: Project[] = [
   },
 
   // ── Software & Platforms ───────────────────────────────────────────────
+  {
+    slug: "kaeyoung",
+    title: "KaeYoung",
+    blurb:
+      "Korean skincare price comparison: 10,000+ K-beauty products across 138 real stores in six regions.",
+    description:
+      "A static K-beauty price-comparison site that matches listings only by their Korean barcode, so a 30 ml and a 100 ml never get mixed up. Rebuilt daily from 138 stores in the US, UK, Canada, Australia, New Zealand and Europe.",
+    domain: "Software",
+    tags: ["Next.js", "Static export", "Barcode matching", "GitHub Actions"],
+    demo: "https://kaeyoung.com",
+    featured: true,
+  },
   {
     slug: "airfare-compare",
     title: "AirfareCompare",

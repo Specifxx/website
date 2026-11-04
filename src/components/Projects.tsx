@@ -229,12 +229,13 @@ export function Projects() {
     >
       <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
         <SectionHeading
-          index="03"
+          index="04"
           kicker="Portfolio"
-          title="Featured Projects"
-          description="My flagship work is a live price-comparison platform used by thousands across the trading-card-game community — backed by daily data pipelines and built end to end. Below: AI tools, quant systems, and full-stack products across the rest of my portfolio."
+          title="More things I've built"
+          description="Beyond Compare Empire: live products, quant systems and machine-learning work, from university projects to tools people use today."
         />
 
+        {spotlightProjects.length > 0 ? (
         <div
           className={`mb-16 grid gap-5 ${
             spotlightProjects.length > 1 ? "md:grid-cols-2" : "mx-auto max-w-xl"
@@ -244,15 +245,7 @@ export function Projects() {
             <SpotlightCard key={project.slug} project={project} index={i} />
           ))}
         </div>
-
-        <Reveal className="mb-8">
-          <h3 className="text-lg font-semibold tracking-tight text-foreground">
-            More projects
-          </h3>
-          <p className="mt-1 text-sm text-muted">
-            Quant systems, machine learning, and full-stack builds.
-          </p>
-        </Reveal>
+        ) : null}
 
         <Reveal className="mb-10 flex flex-wrap gap-2">
           {domains.map((d) => (
