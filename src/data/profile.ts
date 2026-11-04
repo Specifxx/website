@@ -3,8 +3,8 @@ export const profile = {
   shortName: "Bill",
   title: "Senior Consultant, Data & AI at Novigi",
   tagline:
-    "By day I lead delivery of data and AI programs, from the C-suite to the engineers. The rest of the time I build Compare Empire, a suite of 12 price-comparison websites that shoppers in seven regions use every day.",
-  venture: { name: "Compare Empire", detail: "Founder · 12 live sites" },
+    "By day I lead delivery of data and AI programs, from the C-suite to the engineers. The rest of the time I build Compare Empire, a suite of 14 price-comparison websites that shoppers in seven regions use every day.",
+  venture: { name: "Compare Empire", detail: "Founder · 14 live sites" },
   location: "Sydney, Australia",
   email: "Bill.jyang.r@gmail.com",
   github: "https://github.com/Specifxx",
@@ -15,7 +15,7 @@ export const profile = {
   available: false,
   stats: [
     { label: "Currently", value: "Novigi" },
-    { label: "Compare Empire sites live", value: "12" },
+    { label: "Compare Empire sites live", value: "14" },
     {
       label: "Visitors across the suite in 14 days (15–29 Oct 2026)",
       value: "22.8k",
@@ -31,14 +31,14 @@ export const profile = {
 export const about = {
   paragraphs: [
     "I'm a Senior Consultant, Data & AI at Novigi. I make sure complex data and AI programs actually land: I keep the C-suite and the engineers on the same page and turn vague business problems into shipped outcomes.",
-    "Outside client work I founded Compare Empire, a suite of 12 price-comparison websites for trading cards, hobby gear and tech. RiftCompare is the flagship; DexCompare, OP Compare, MTG Compare, CamCompare and the rest each track hundreds of stores a day. I run the whole thing as one person, with Claude Code as my engineering team.",
-    "I studied Data Science & Software at UNSW. Happy to talk delivery, stakeholder management, applied AI, or how to run twelve websites for a few dollars a day.",
+    "Outside client work I founded Compare Empire, a suite of 14 price-comparison websites for trading cards, hobby gear, tech and K-beauty. RiftCompare is the flagship; DexCompare, OP Compare, MTG Compare, CamCompare and the rest each track hundreds of stores a day. I run the whole thing as one person, with Claude Code as my engineering team.",
+    "I studied Data Science & Software at UNSW. Happy to talk delivery, stakeholder management, applied AI, or how to run fourteen websites for a few dollars a day.",
   ],
   highlights: [
     "Delivery & program management",
     "Stakeholder & executive engagement",
     "Technical fluency: data engineering & AI",
-    "Founder and operator: 12 live websites",
+    "Founder and operator: 14 live websites",
   ],
 } as const;
 
@@ -133,7 +133,7 @@ export const timeline: TimelineItem[] = [
     title: "Founder",
     org: "Compare Empire",
     description:
-      "Built and run a suite of 12 price-comparison websites (RiftCompare, DexCompare, OP Compare, MTG Compare and more) across seven regions, from data pipelines and product matching to SEO, affiliate partnerships and operations.",
+      "Built and run a suite of 14 price-comparison websites (RiftCompare, DexCompare, OP Compare, MTG Compare and more) across seven regions, from data pipelines and product matching to SEO, affiliate partnerships and operations.",
   },
   {
     period: "Ongoing",

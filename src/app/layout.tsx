@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Bill Yang: Senior Consultant, Data & AI at Novigi, and founder of Compare Empire, a suite of 12 price-comparison websites led by RiftCompare.";
+  "Bill Yang: Senior Consultant, Data & AI at Novigi, and founder of Compare Empire, a suite of 14 price-comparison websites led by RiftCompare.";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://billyang.site";
 const title = `${profile.name} | Senior Data & AI Consultant, Sydney`;

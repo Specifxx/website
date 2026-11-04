@@ -3,14 +3,24 @@ import { ArrowUpRight, Check, Crown } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 import {
+  SITE_COUNT,
   flagship,
-  suiteAsOf,
+  siteChips,
   suiteHow,
+  suiteLive,
   suiteSites,
   suiteStats,
+  visitorsAsOf,
   type Cluster,
   type SuiteSite,
 } from "@/data/suite";
+
+const fetchedOn = new Date(suiteLive.fetchedAt).toLocaleDateString("en-AU", {
+  day: "numeric",
+  month: "short",
+  year: "numeric",
+  timeZone: "Australia/Sydney",
+});
 
 
 function host(url: string) {
@@ -18,6 +28,7 @@ function host(url: string) {
 }
 
 function SiteCard({ site }: { site: SuiteSite }) {
+  const { chips, live } = siteChips(site);
   return (
     <a
       href={site.url}
@@ -40,7 +51,7 @@ function SiteCard({ site }: { site: SuiteSite }) {
       </div>
       <p className="mt-1.5 text-sm text-muted">{site.niche}</p>
       <div className="mt-4 flex flex-wrap gap-1.5">
-        {site.stats.map((s) => (
+        {chips.map((s) => (
           <span
             key={s}
             className="rounded-md bg-[var(--surface-raised)] px-2 py-0.5 font-mono text-[0.68rem] text-muted"
@@ -48,6 +59,15 @@ function SiteCard({ site }: { site: SuiteSite }) {
             {s}
           </span>
         ))}
+        {live ? (
+          <span
+            title={`Read from the site's own price data on ${fetchedOn}`}
+            className="inline-flex items-center gap-1 rounded-md border border-accent/30 px-1.5 py-0.5 font-mono text-[0.62rem] uppercase tracking-wider text-accent"
+          >
+            <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-accent" />
+            Live
+          </span>
+        ) : null}
       </div>
       <span className="mt-auto pt-4 font-mono text-[0.7rem] text-faint">
         {host(site.url)}
@@ -74,7 +94,9 @@ function ClusterBlock({
         <h3 className="text-lg font-semibold tracking-tight text-foreground">
           {cluster}
         </h3>
-        <span className="font-mono text-xs text-faint">{count} sites</span>
+        <span className="font-mono text-xs text-faint">
+          {count} {count === 1 ? "site" : "sites"}
+        </span>
       </Reveal>
       <div className={`grid gap-4 sm:grid-cols-2 ${cols}`}>
         {sites.map((site, i) => (
@@ -95,8 +117,8 @@ export function CompareEmpire() {
         <SectionHeading
           index="02"
           kicker="Founder · Compare Empire"
-          title="Compare Empire: a suite of 12 websites"
-          description="Price comparison sites that people actually use. Each one reads hundreds of independent stores every day, matches every listing to the right product and shows the cheapest place to buy, in the shopper's own currency. I design, build and run all twelve."
+          title={`Compare Empire: a suite of ${SITE_COUNT} websites`}
+          description="Price comparison sites that people actually use. Each one reads hundreds of independent stores every day, matches every listing to the right product and shows the cheapest place to buy, in the shopper's own currency. I design, build and run all fourteen. The store and product counts below are read from each site's own data every day."
         />
 
         {/* Suite stats */}
@@ -111,6 +133,12 @@ export function CompareEmpire() {
               >
                 <dt className="order-2 mt-1.5 text-xs leading-snug text-muted">
                   {s.label}
+                  {"live" in s ? (
+                    <span className="ml-1.5 inline-flex items-center gap-1 align-middle font-mono text-[0.6rem] uppercase tracking-wider text-accent">
+                      <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-accent" />
+                      Live
+                    </span>
+                  ) : null}
                   {"note" in s ? (
                     <span className="mt-1 block text-[0.68rem] text-faint">
                       {s.note}
@@ -197,16 +225,17 @@ export function CompareEmpire() {
 
         {/* The rest of the suite: cards get a full row, hobby and tech share one */}
         <ClusterBlock cluster="Trading cards" className="mt-12" cols="lg:grid-cols-4" />
-        <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-6">
-          <ClusterBlock cluster="Hobby" cols="" />
-          <ClusterBlock cluster="Tech" cols="" />
+        <div className="mt-12 grid gap-12 lg:grid-cols-5 lg:gap-6">
+          <ClusterBlock cluster="Hobby" cols="" className="lg:col-span-2" />
+          <ClusterBlock cluster="Tech" cols="" className="lg:col-span-2" />
+          <ClusterBlock cluster="Beauty" cols="sm:grid-cols-1" />
         </div>
 
         {/* How it runs */}
         <Reveal className="mt-14">
           <div className="rounded-2xl border border-[var(--border)] bg-background-soft p-6 sm:p-8">
             <h3 className="text-lg font-semibold tracking-tight text-foreground">
-              How one person runs twelve sites
+              How one person runs fourteen sites
             </h3>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {suiteHow.map((h) => (
@@ -217,8 +246,8 @@ export function CompareEmpire() {
               ))}
             </ul>
             <p className="mt-5 font-mono text-[0.68rem] text-faint">
-              Figures from each site&apos;s own price data and Vercel Analytics, as of{" "}
-              {suiteAsOf}.
+              Store and product counts are read from each site&apos;s own published price data once a day
+              (last read {fetchedOn}); visitor figures are from Vercel Analytics, {visitorsAsOf}.
             </p>
           </div>
         </Reveal>
