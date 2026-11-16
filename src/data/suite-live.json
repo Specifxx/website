@@ -1,71 +1,71 @@
 {
  "v": 1,
- "fetchedAt": "2026-11-15T10:20:10.882Z",
+ "fetchedAt": "2026-11-16T10:10:44.424Z",
  "sites": {
   "rift": {
    "stores": 282,
-   "products": 2540,
-   "updatedAt": "2026-11-14T15:37:38.957Z"
+   "products": 2541,
+   "updatedAt": "2026-11-15T15:52:35.010Z"
   },
   "dex": {
    "stores": 883,
-   "products": 1921,
-   "updatedAt": "2026-11-15T01:03:59.503Z"
+   "products": 1919,
+   "updatedAt": "2026-11-16T01:05:51.457Z"
   },
   "op": {
    "stores": 417,
    "products": 7962,
-   "updatedAt": "2026-11-14T23:09:52.450Z"
+   "updatedAt": "2026-11-15T23:35:54.582Z"
   },
   "mtg": {
    "stores": 802,
-   "products": 2012,
-   "updatedAt": "2026-11-15T00:33:14.946Z"
+   "products": 2022,
+   "updatedAt": "2026-11-16T00:35:27.370Z"
   },
   "wargame": {
-   "stores": 401,
+   "stores": 402,
    "products": 6714,
-   "updatedAt": "2026-11-14T23:18:37.007Z"
+   "updatedAt": "2026-11-15T23:46:40.025Z"
   },
   "figure": {
    "stores": 155,
-   "products": 2966,
-   "updatedAt": "2026-11-14T15:06:45.970Z"
+   "products": 2968,
+   "updatedAt": "2026-11-15T15:44:50.733Z"
   },
   "kaeyoung": {
    "stores": 157,
-   "products": 4959,
-   "updatedAt": "2026-11-14T13:44:30.045Z"
+   "products": 4956,
+   "updatedAt": "2026-11-15T14:09:55.427Z"
   },
   "cam": {
    "stores": 33,
    "products": 1033,
-   "updatedAt": "2026-11-15T06:34:31.735Z"
+   "updatedAt": "2026-11-16T06:31:41.116Z"
   },
   "gundam": {
-   "stores": 227,
-   "products": 1436,
-   "updatedAt": "2026-11-14T22:25:15.950Z"
+   "stores": 226,
+   "products": 1435,
+   "updatedAt": "2026-11-15T22:49:23.858Z"
   },
   "lorcana": {
-   "stores": 495,
+   "stores": 494,
    "products": 1660,
-   "updatedAt": "2026-11-14T13:32:56.792Z"
+   "updatedAt": "2026-11-15T13:57:04.701Z"
   },
   "ygo": {
-   "stores": 480,
+   "stores": 481,
    "products": 1341,
-   "updatedAt": "2026-11-14T18:15:39.279Z"
+   "updatedAt": "2026-11-15T18:57:34.246Z"
   },
   "cyberpunk": {
    "stores": 224,
    "products": 522,
-   "updatedAt": "2026-11-15T06:37:06.216Z"
+   "updatedAt": "2026-11-16T06:34:00.459Z"
   },
   "bandai": {
    "stores": 318,
    "products": 200,
-   "updatedAt": "2026-11-14T10:28:26.098Z"
+   "updatedAt": "2026-11-15T10:56:06.985Z"
   }
  }
 }
