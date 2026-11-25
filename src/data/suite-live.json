@@ -1,26 +1,26 @@
 {
  "v": 1,
- "fetchedAt": "2026-11-24T12:56:14.497Z",
+ "fetchedAt": "2026-11-25T11:43:53.982Z",
  "sites": {
   "rift": {
    "stores": 284,
-   "products": 2637,
-   "updatedAt": "2026-11-23T20:42:27.635Z"
+   "products": 2640,
+   "updatedAt": "2026-11-24T19:56:07.147Z"
   },
   "dex": {
-   "stores": 871,
-   "products": 1924,
-   "updatedAt": "2026-11-24T05:42:07.934Z"
+   "stores": 872,
+   "products": 1939,
+   "updatedAt": "2026-11-25T04:26:51.512Z"
   },
   "op": {
    "stores": 415,
-   "products": 8008,
-   "updatedAt": "2026-11-24T04:35:26.078Z"
+   "products": 8012,
+   "updatedAt": "2026-11-25T03:19:53.481Z"
   },
   "mtg": {
-   "stores": 801,
-   "products": 1754,
-   "updatedAt": "2026-11-24T05:11:58.250Z"
+   "stores": 800,
+   "products": 1757,
+   "updatedAt": "2026-11-25T04:01:46.411Z"
   },
   "wargame": {
    "stores": 401,
@@ -34,38 +34,38 @@
   },
   "kaeyoung": {
    "stores": 160,
-   "products": 4894,
-   "updatedAt": "2026-11-23T18:17:03.490Z"
+   "products": 4899,
+   "updatedAt": "2026-11-24T17:54:33.435Z"
   },
   "cam": {
    "stores": 33,
    "products": 1033,
-   "updatedAt": "2026-11-24T02:13:45.367Z"
+   "updatedAt": "2026-11-25T08:36:31.035Z"
   },
   "gundam": {
    "stores": 320,
-   "products": 1258,
-   "updatedAt": "2026-11-24T03:58:29.704Z"
+   "products": 1261,
+   "updatedAt": "2026-11-25T02:29:42.665Z"
   },
   "lorcana": {
-   "stores": 494,
-   "products": 1667,
-   "updatedAt": "2026-11-23T18:11:04.079Z"
+   "stores": 495,
+   "products": 1666,
+   "updatedAt": "2026-11-24T17:47:00.013Z"
   },
   "ygo": {
-   "stores": 482,
+   "stores": 481,
    "products": 1341,
-   "updatedAt": "2026-11-24T12:40:40.608Z"
+   "updatedAt": "2026-11-25T08:28:37.857Z"
   },
   "cyberpunk": {
    "stores": 240,
    "products": 546,
-   "updatedAt": "2026-11-24T09:57:48.034Z"
+   "updatedAt": "2026-11-25T08:39:54.033Z"
   },
   "bandai": {
-   "stores": 316,
-   "products": 220,
-   "updatedAt": "2026-11-23T12:34:01.877Z"
+   "stores": 317,
+   "products": 219,
+   "updatedAt": "2026-11-24T13:40:46.761Z"
   }
  }
 }
