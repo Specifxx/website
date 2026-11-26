@@ -1,6 +1,6 @@
 {
  "v": 1,
- "fetchedAt": "2026-11-25T11:43:53.982Z",
+ "fetchedAt": "2026-11-26T11:29:14.768Z",
  "sites": {
   "rift": {
    "stores": 284,
@@ -8,19 +8,19 @@
    "updatedAt": "2026-11-24T19:56:07.147Z"
   },
   "dex": {
-   "stores": 872,
-   "products": 1939,
-   "updatedAt": "2026-11-25T04:26:51.512Z"
+   "stores": 873,
+   "products": 1946,
+   "updatedAt": "2026-11-26T09:31:53.607Z"
   },
   "op": {
    "stores": 415,
    "products": 8012,
-   "updatedAt": "2026-11-25T03:19:53.481Z"
+   "updatedAt": "2026-11-26T02:27:32.146Z"
   },
   "mtg": {
-   "stores": 800,
-   "products": 1757,
-   "updatedAt": "2026-11-25T04:01:46.411Z"
+   "stores": 801,
+   "products": 1755,
+   "updatedAt": "2026-11-26T03:26:08.955Z"
   },
   "wargame": {
    "stores": 401,
@@ -34,38 +34,38 @@
   },
   "kaeyoung": {
    "stores": 160,
-   "products": 4899,
-   "updatedAt": "2026-11-24T17:54:33.435Z"
+   "products": 4897,
+   "updatedAt": "2026-11-25T17:29:20.348Z"
   },
   "cam": {
    "stores": 33,
    "products": 1033,
-   "updatedAt": "2026-11-25T08:36:31.035Z"
+   "updatedAt": "2026-11-26T03:35:30.851Z"
   },
   "gundam": {
-   "stores": 320,
-   "products": 1261,
-   "updatedAt": "2026-11-25T02:29:42.665Z"
+   "stores": 321,
+   "products": 1259,
+   "updatedAt": "2026-11-26T01:47:40.033Z"
   },
   "lorcana": {
    "stores": 495,
-   "products": 1666,
-   "updatedAt": "2026-11-24T17:47:00.013Z"
+   "products": 1668,
+   "updatedAt": "2026-11-25T17:14:41.909Z"
   },
   "ygo": {
-   "stores": 481,
+   "stores": 595,
    "products": 1341,
-   "updatedAt": "2026-11-25T08:28:37.857Z"
+   "updatedAt": "2026-11-26T08:13:15.588Z"
   },
   "cyberpunk": {
-   "stores": 240,
+   "stores": 256,
    "products": 546,
-   "updatedAt": "2026-11-25T08:39:54.033Z"
+   "updatedAt": "2026-11-26T08:23:44.104Z"
   },
   "bandai": {
    "stores": 317,
    "products": 219,
-   "updatedAt": "2026-11-24T13:40:46.761Z"
+   "updatedAt": "2026-11-25T12:51:09.664Z"
   }
  }
 }
