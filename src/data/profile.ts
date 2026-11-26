@@ -16,9 +16,10 @@ export const profile = {
   stats: [
     { label: "Currently", value: "Novigi" },
     { label: "Compare Empire sites live", value: "14" },
+    { label: "Monthly recurring revenue", value: "$4k+" },
     {
-      label: "Visitors across the suite in 14 days (15–29 Oct 2026)",
-      value: "22.8k",
+      label: "Visitors across the suite in 30 days (28 Oct–26 Nov 2026)",
+      value: "121.8k",
     },
     {
       label: "Monthly visits to the flagship",

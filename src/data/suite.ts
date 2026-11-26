@@ -16,7 +16,7 @@
 
 import live from "./suite-live.json";
 
-export const visitorsAsOf = "15–29 Oct 2026";
+export const visitorsAsOf = "28 Oct–26 Nov 2026";
 
 export type Cluster = "Trading cards" | "Hobby" | "Tech" | "Beauty";
 
@@ -62,14 +62,6 @@ export const flagship = {
     "44,939 visitors in the last 90 days, up 689%, earning through retailer affiliate links",
     "Price history, alerts, collection tracker and a Pro tier on Stripe",
   ],
-  proof: {
-    src: "/riftcompare-analytics.png",
-    alt: "Vercel Analytics for riftcompare.com over the last 90 days: 44,939 visitors (+689%) and 126,263 page views (+459%), with daily traffic climbing from ~200 to 1,000+",
-    caption:
-      "Vercel Analytics · last 90 days (Jul–Oct 2026) · 44,939 visitors · 126,263 page views",
-    width: 1578,
-    height: 486,
-  },
 } as const;
 
 export const suiteSites: SuiteSite[] = [
@@ -239,12 +231,21 @@ const largestName =
   largest ? (largest.key === "rift" ? flagship.name : (suiteSites.find((s) => s.key === largest.key)?.name ?? largest.key)) : null;
 
 /** The headline strip. Live figures carry a `live` flag so the UI can say so. */
+export const suiteProof = {
+  src: "/compare-empire-analytics.png",
+  alt: "Vercel Analytics across every Compare Empire site: 121,762 visitors (+230%) and 307,725 page views (+148%) in the last 30 days, with daily visitors climbing from about 300 in early September to over 10,000 in late November",
+  caption:
+    "Vercel Analytics, every Compare Empire site · last 30 days (28 Oct–26 Nov 2026) vs the 30 before · chart: daily visitors over 90 days",
+  width: 1600,
+  height: 520,
+} as const;
+
 export const suiteStats = [
   { value: String(SITE_COUNT), label: "Live price-comparison websites" },
   {
-    value: "22.8k",
-    label: "Visitors in 14 days",
-    note: `Vercel Analytics, ${visitorsAsOf}, 9 sites measured`,
+    value: "121.8k",
+    label: "Visitors in 30 days",
+    note: `Vercel Analytics, ${visitorsAsOf}, every site, up 230%`,
   },
   {
     value: products.total >= 1000 ? `${Math.floor(products.total / 1000)}k+` : fmt(products.total),

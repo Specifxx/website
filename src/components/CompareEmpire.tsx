@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { ArrowUpRight, Check, Crown } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, ArrowUpRight, Check, Crown } from "lucide-react";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 import {
   SITE_COUNT,
   flagship,
+  suiteProof,
   siteChips,
   suiteHow,
   suiteLive,
@@ -109,13 +111,14 @@ function ClusterBlock({
   );
 }
 
-export function CompareEmpire() {
+/** The full suite: every site card. Lives on /compare-empire/. */
+export function CompareEmpireFull() {
   return (
     <section id="compare-empire" className="relative overflow-hidden">
       <div className="aurora opacity-50" />
       <div className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
         <SectionHeading
-          index="02"
+          index="01"
           kicker="Founder · Compare Empire"
           title={`Compare Empire: a suite of ${SITE_COUNT} websites`}
           description="Price comparison sites that people actually use. Each one reads hundreds of independent stores every day, matches every listing to the right product and shows the cheapest place to buy, in the shopper's own currency. I design, build and run all fourteen. The store and product counts below are read from each site's own data every day."
@@ -153,11 +156,29 @@ export function CompareEmpire() {
           </dl>
         </Reveal>
 
+        {/* Traffic across every site */}
+        <Reveal delay={0.05} className="mt-6">
+          <figure>
+            <div className="overflow-hidden rounded-xl border border-[var(--border)] bg-white p-3">
+              <Image
+                src={suiteProof.src}
+                alt={suiteProof.alt}
+                width={suiteProof.width}
+                height={suiteProof.height}
+                className="h-auto w-full"
+              />
+            </div>
+            <figcaption className="mt-2 font-mono text-[0.65rem] text-faint">
+              {suiteProof.caption}
+            </figcaption>
+          </figure>
+        </Reveal>
+
         {/* Flagship */}
         <Reveal delay={0.05} className="mt-6">
           <article className="relative overflow-hidden rounded-2xl border border-accent/30 bg-surface p-6 sm:p-8">
             <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-accent/10 blur-3xl" />
-            <div className="relative grid gap-8 lg:grid-cols-[1fr_1.15fr] lg:items-center">
+            <div className="relative">
               <div>
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 font-mono text-[0.65rem] uppercase tracking-wider text-accent">
                   <Crown className="h-3 w-3" />
@@ -205,20 +226,6 @@ export function CompareEmpire() {
                   <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </a>
               </div>
-              <figure>
-                <div className="overflow-hidden rounded-xl border border-[var(--border)] bg-white p-3">
-                  <Image
-                    src={flagship.proof.src}
-                    alt={flagship.proof.alt}
-                    width={flagship.proof.width}
-                    height={flagship.proof.height}
-                    className="h-auto w-full"
-                  />
-                </div>
-                <figcaption className="mt-2 font-mono text-[0.65rem] text-faint">
-                  {flagship.proof.caption}
-                </figcaption>
-              </figure>
             </div>
           </article>
         </Reveal>
@@ -249,6 +256,77 @@ export function CompareEmpire() {
               Store and product counts are read from each site&apos;s own published price data once a day
               (last read {fetchedOn}); visitor figures are from Vercel Analytics, {visitorsAsOf}.
             </p>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+const homeStats = [
+  { value: String(SITE_COUNT), label: "Live sites" },
+  { value: "$4k+", label: "Monthly recurring revenue" },
+  { value: "121.8k", label: "Visitors in 30 days, up 230%" },
+  { value: "7", label: "Regions" },
+];
+
+/** The homepage summary: one compact block that links to the full suite. */
+export function CompareEmpire() {
+  const names = [flagship.name, ...suiteSites.map((s) => s.name)];
+  return (
+    <section id="compare-empire" className="relative overflow-hidden">
+      <div className="aurora opacity-50" />
+      <div className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 sm:py-32">
+        <SectionHeading
+          index="02"
+          kicker="Founder · Compare Empire"
+          title="Compare Empire"
+          description={`A suite of ${SITE_COUNT} price-comparison websites I design, build and run on my own, for trading cards, hobby gear, tech and K-beauty, led by RiftCompare. Each one reads hundreds of stores a day and shows shoppers the cheapest place to buy.`}
+        />
+
+        <Reveal>
+          <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--border)] lg:grid-cols-4">
+            {homeStats.map((s) => (
+              <div key={s.label} className="flex flex-col bg-surface p-5">
+                <dt className="order-2 mt-1.5 text-xs leading-snug text-muted">{s.label}</dt>
+                <dd className="order-1 font-mono text-3xl font-semibold tracking-tight text-accent">
+                  {s.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
+
+        <Reveal delay={0.05} className="mt-6">
+          <figure>
+            <div className="overflow-hidden rounded-xl border border-[var(--border)] bg-white p-3">
+              <Image
+                src={suiteProof.src}
+                alt={suiteProof.alt}
+                width={suiteProof.width}
+                height={suiteProof.height}
+                className="h-auto w-full"
+              />
+            </div>
+            <figcaption className="mt-2 font-mono text-[0.65rem] text-faint">
+              {suiteProof.caption}
+            </figcaption>
+          </figure>
+        </Reveal>
+
+        <Reveal delay={0.1} className="mt-8">
+          <div className="flex flex-col gap-5 rounded-2xl border border-[var(--border)] bg-background-soft p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+            <p className="text-sm leading-relaxed text-muted">
+              <span className="font-medium text-foreground">The sites: </span>
+              {names.join(" · ")}
+            </p>
+            <Link
+              href="/compare-empire/"
+              className="group inline-flex shrink-0 items-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent shadow-sm shadow-accent/20 transition-transform hover:-translate-y-0.5"
+            >
+              See every site
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </Link>
           </div>
         </Reveal>
       </div>
