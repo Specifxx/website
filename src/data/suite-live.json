@@ -1,26 +1,26 @@
 {
  "v": 1,
- "fetchedAt": "2026-11-26T11:29:14.768Z",
+ "fetchedAt": "2026-11-27T11:25:24.094Z",
  "sites": {
   "rift": {
-   "stores": 284,
-   "products": 2640,
-   "updatedAt": "2026-11-24T19:56:07.147Z"
+   "stores": 289,
+   "products": 2688,
+   "updatedAt": "2026-11-26T19:02:58.015Z"
   },
   "dex": {
-   "stores": 873,
-   "products": 1946,
-   "updatedAt": "2026-11-26T09:31:53.607Z"
+   "stores": 938,
+   "products": 1843,
+   "updatedAt": "2026-11-27T03:59:36.535Z"
   },
   "op": {
-   "stores": 415,
+   "stores": 504,
    "products": 8012,
-   "updatedAt": "2026-11-26T02:27:32.146Z"
+   "updatedAt": "2026-11-27T02:28:07.249Z"
   },
   "mtg": {
-   "stores": 801,
-   "products": 1755,
-   "updatedAt": "2026-11-26T03:26:08.955Z"
+   "stores": 837,
+   "products": 1790,
+   "updatedAt": "2026-11-27T03:30:10.566Z"
   },
   "wargame": {
    "stores": 401,
@@ -34,38 +34,38 @@
   },
   "kaeyoung": {
    "stores": 160,
-   "products": 4897,
-   "updatedAt": "2026-11-25T17:29:20.348Z"
+   "products": 4899,
+   "updatedAt": "2026-11-26T17:09:13.027Z"
   },
   "cam": {
    "stores": 33,
    "products": 1033,
-   "updatedAt": "2026-11-26T03:35:30.851Z"
+   "updatedAt": "2026-11-27T01:45:15.122Z"
   },
   "gundam": {
-   "stores": 321,
+   "stores": 382,
    "products": 1259,
-   "updatedAt": "2026-11-26T01:47:40.033Z"
+   "updatedAt": "2026-11-27T01:44:38.497Z"
   },
   "lorcana": {
-   "stores": 495,
-   "products": 1668,
-   "updatedAt": "2026-11-25T17:14:41.909Z"
+   "stores": 597,
+   "products": 1666,
+   "updatedAt": "2026-11-26T16:55:27.830Z"
   },
   "ygo": {
-   "stores": 595,
+   "stores": 594,
    "products": 1341,
-   "updatedAt": "2026-11-26T08:13:15.588Z"
+   "updatedAt": "2026-11-27T08:25:12.667Z"
   },
   "cyberpunk": {
    "stores": 256,
    "products": 546,
-   "updatedAt": "2026-11-26T08:23:44.104Z"
+   "updatedAt": "2026-11-27T08:39:04.606Z"
   },
   "bandai": {
-   "stores": 317,
-   "products": 219,
-   "updatedAt": "2026-11-25T12:51:09.664Z"
+   "stores": 415,
+   "products": 225,
+   "updatedAt": "2026-11-26T12:29:04.662Z"
   }
  }
 }
