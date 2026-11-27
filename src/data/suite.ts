@@ -12,11 +12,14 @@
 //   - visitors: Vercel Web Analytics, 14 days 15–29 Oct 2026, for the nine
 //     sites that had analytics switched on (sum of the per-site figures).
 //   - RiftCompare traffic: Vercel Web Analytics screenshot, last 90 days.
+//   - MRR: Bill's figure for the whole suite, Nov 2026 (mostly retailer
+//     affiliate commissions). Update `mrrAsOf` when it changes.
 // Update `visitorsAsOf` whenever those are refreshed.
 
 import live from "./suite-live.json";
 
 export const visitorsAsOf = "28 Oct–26 Nov 2026";
+export const mrrAsOf = "Nov 2026";
 
 export type Cluster = "Trading cards" | "Hobby" | "Tech" | "Beauty";
 
@@ -242,6 +245,11 @@ export const suiteProof = {
 
 export const suiteStats = [
   { value: String(SITE_COUNT), label: "Live price-comparison websites" },
+  {
+    value: "$4k+",
+    label: "Monthly recurring revenue",
+    note: `Across the suite, mostly affiliate commissions · ${mrrAsOf}`,
+  },
   {
     value: "121.8k",
     label: "Visitors in 30 days",

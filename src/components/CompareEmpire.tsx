@@ -126,12 +126,12 @@ export function CompareEmpireFull() {
 
         {/* Suite stats */}
         <Reveal>
-          <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--border)] sm:grid-cols-3 lg:grid-cols-5">
+          <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--border)] sm:grid-cols-3">
             {suiteStats.map((s, i) => (
               <div
                 key={s.label}
                 className={`flex flex-col bg-surface p-5 ${
-                  i === 0 ? "col-span-2 sm:col-span-1" : ""
+                  i === 0 && suiteStats.length % 2 === 1 ? "col-span-2 sm:col-span-1" : ""
                 }`}
               >
                 <dt className="order-2 mt-1.5 text-xs leading-snug text-muted">
