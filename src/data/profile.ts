@@ -71,7 +71,7 @@ export type SkillGroup = {
 export const skills: SkillGroup[] = [
   {
     category: "Languages",
-    items: ["Python", "TypeScript", "JavaScript", "SQL", "R", "C"],
+    items: ["Python", "TypeScript", "JavaScript", "SQL", "R", "SAS", "C"],
   },
   {
     category: "Data Science & AI",
@@ -79,9 +79,10 @@ export const skills: SkillGroup[] = [
       "scikit-learn",
       "PyTorch",
       "Pandas",
+      "NumPy",
+      "PySpark",
       "LLMs / Claude",
-      "OpenCV",
-      "Reinforcement Learning",
+      "Machine Learning",
     ],
   },
   {
@@ -96,7 +97,18 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "Engineering & Platform",
-    items: ["Next.js", "React", "FastAPI", "Prisma", "Playwright", "Vercel"],
+    items: [
+      "Next.js",
+      "React",
+      "FastAPI",
+      "Prisma",
+      "Playwright",
+      "Vercel",
+      "AWS",
+      "Terraform",
+      "Infrastructure as Code",
+      "YAML",
+    ],
   },
 ];
 

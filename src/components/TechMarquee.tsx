@@ -15,7 +15,7 @@ const TECH = [
   "Recharts",
   "Vercel",
   "Web Scraping",
-  "Reinforcement Learning",
+  "Machine Learning",
   "Elo Modelling",
 ];
 
